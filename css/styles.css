@@ -1,0 +1,573 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Assistant:wght@200;400;600;700&family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,500&family=Cantarell:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;600;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {overflow: hidden;}
+
+li {
+    list-style: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+.box-flex-full {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.fade-in-slide-up {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.fade-in-slide-up.ativo {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#fundo-loader {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(223, 214, 207);
+    position: fixed;
+    top: 0;
+    z-index: 9998;
+}
+
+#loader {
+    width: 300px;
+    height: 80px;
+    background: rgb(223, 214, 207) url("http://localhost/Palazzo/img/logo.png") center no-repeat;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+}
+
+.fade-top,
+.fade-bottom {
+    left: 0;
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    z-index: 11;
+}
+
+.fade-top {
+    top: 0;
+    background: linear-gradient(to top, transparent, rgb(0, 0, 0));
+}
+
+.fade-bottom {
+    bottom: 0;
+    background: linear-gradient(to bottom, transparent, rgb(0, 0, 0));
+}
+
+.section-title {
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.divisoria {
+    width: 180px;
+    margin: auto;
+}
+
+.divisoria img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.btn-primary {
+    margin-top: 40px;
+    min-width: 120px;
+    height: 50px;
+    color: rgb(223, 214, 207);
+    background-color: black;
+    border: 1px solid black;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+    transition: background-color 0.6s ease;
+}
+
+.btn-primary:hover {
+    color: black;
+    border: 3px solid black;
+    background-color: rgb(223, 214, 207);
+}
+
+.top-header {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    background-color: rgb(27, 27, 27);
+}
+
+.redes-sociais {
+    margin-right: 30px;
+}
+
+.redes-sociais ul {
+    display: inline-block;
+    margin: 0px !important;
+}
+
+.redes-sociais ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.redes-sociais button {
+    border: none;
+    background-color: inherit;
+    color: white;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.redes-sociais button:hover {
+    opacity: 0.8;
+}
+
+header {
+    display: flex !important;
+    position: relative;
+    align-items: center;
+    height: 120px;
+    width: 100%;
+    background-color: rgb(223, 214, 207);
+    z-index: 9997;
+}
+
+.header-scroll {
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.header-container {
+    margin: 0px 40px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.toggle-menu {
+    height: 40px;
+    width: 30px;
+    font-size: 25px;
+    background-color: inherit;
+    border: none;
+    transition: 0.3s;
+}
+
+.agendamento {
+    font-family: 'Cantarell', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    height: 45px;
+    width: 200px;
+    background-color: inherit;
+    border-radius: 22px;
+    transition: 0.3s;
+    border: 2px solid black;
+}
+
+.toggle-menu:hover {
+    color: rgb(196, 171, 33);
+}
+
+.agendamento:hover {
+    color: rgb(196, 171, 33);
+    border: 2px solid rgb(196, 171, 33);
+}
+
+.logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 100%;
+    padding: 40px 0px 40px 0px;
+    background-color: rgb(223, 214, 207);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    transition: width 0.5s ease-in-out;
+    z-index: 9999;
+}
+
+.show-menu {
+    position: fixed;
+    width: 300px;
+}
+
+.menu ul {
+    margin: auto;
+    width: fit-content;
+}
+
+.menu ul li {
+    margin-bottom: 30px;
+    text-align: center;
+    font-family: 'Cantarell', sans-serif;
+    font-size: 18px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+}
+
+.menu ul li a:hover {
+    color: rgb(196, 171, 33);
+}
+
+.active {
+    color: rgb(196, 171, 33) !important;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9998;
+    display: none;
+    cursor: pointer;
+}
+
+.apresentação-principal {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 740px;
+}
+
+.apresentacao-scroll {
+    margin-top: 120px;
+}
+
+.arrow {
+    position: absolute;
+    top: 40%;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.arrow:hover svg path {
+    fill: rgb(196, 171, 33);
+}
+
+#preview {
+    left: 40px;
+}
+
+#next {
+    right: 40px;
+}
+
+.overlay-main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 8;
+}
+
+.apresentação-principal:hover .overlay-main {
+    cursor: pointer;
+}
+
+.apresentação-principal:hover img {
+    transform: scale(1.05) translateX(-50%);
+}
+
+.inactive {
+    opacity: 0 !important;
+}
+
+.apresentação-principal .slides {
+    position: absolute;
+    height: 760px;
+    cursor: pointer;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: transform 2s ease, opacity 2s ease;
+    opacity: 0;
+}
+
+.apresentação-principal:hover .ver-video-box {
+    display: flex;
+}
+
+.ver-video-box {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+    align-items: center;
+    width: 180px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+    z-index: 9;
+}
+
+.play-box {
+    background-color: rgb(241, 234, 228);
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.play-box svg {
+    height: 20px;
+    margin-left: 5px;
+}
+
+.apresentação-principal .headline {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 11;
+}
+
+.apresentação-principal .line {
+    margin: 0;
+    font-size: 45px;
+    color: rgb(223, 214, 207);
+    font-family: 'Cantarell', sans-serif;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.animated-word {
+    display: inline-block;
+    transform: rotate(4deg) translateY(25px);
+    opacity: 0;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.tratamentos {
+    min-height: 400px;
+    padding: 160px 0;
+    background-color: black;
+    color: rgb(223, 214, 207);
+    overflow: hidden;
+}
+
+.tratamento-container {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 160px;
+    align-items: center;
+}
+
+.tratamento {
+    color: rgb(223, 214, 207);
+    position: absolute;
+    display: flex;
+    padding: 20px;
+    width: 0;
+    transition: width 3.5s ease-in-out;
+}
+
+.left {
+    justify-content: end;
+    left: 0;
+}
+
+.right {
+    justify-content: start;
+    right: 0;
+}
+
+.expanded {
+    width: 35%;
+}
+
+.foto-fixa {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.foto-fixa img {
+    width: 100%;
+}
+
+.espaço {
+    height: 600px;
+}
+
+.equipe {
+    background-color: rgb(223, 214, 207);
+    padding: 160px 0px;
+}
+
+.equipe .texto {
+    margin-right: 40px;
+}
+
+.equipe .texto h1 {
+    font-family: 'Jost', sans-serif;
+    font-weight: 600;
+}
+
+.box-img-pro {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.box-img-pro img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tecnologias {
+    background-color: black;
+    height: 650px;
+}
+
+.fale-conosco {
+    padding: 200px 0;
+    width: 100%;
+    background-color: rgb(241, 234, 228);
+    background-image: url('../img/planta.png');
+    background-size: cover;
+    /* Ajusta a imagem para cobrir toda a div */
+    background-position: center;
+    /* Centraliza a imagem na div */
+    background-repeat: no-repeat;
+    /* Evita a repetição da imagem */
+    height: 1150px;
+}
+
+.fale-conosco input {
+    height: 50px;
+}
+
+.fale-conosco textarea {
+    min-height: 200px;
+}
+
+.localizacao-img {
+    width: 100%;
+    height: 550px;
+    background-color: white;
+    overflow: hidden;
+}
+
+.localizacao-img img {
+    object-fit: cover;
+}
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 35px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background-color: black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    box-shadow: 0px 0px 12px rgba(68, 68, 68, 0.5);
+    transition: transform 0.3s ease-in-out;
+    z-index: 9996;
+}
+
+.whatsapp-button:hover {
+    transform: scale(1.1);
+}
+
+.whatsapp-button img {
+    height: 60px;
+}
+
+footer {
+    display: flex;
+    color: white;
+    padding: 60px 0px 10px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(43, 43, 43);
+    height: 100%;
+    width: 100%;
+    font-size: 14px;
+}
+
+.txt-box {
+    text-align: center;
+}
+
+.box {
+    margin-bottom: 140px;
+}
+
+.box ul {
+    padding: 0px !important;
+    margin-left: -10px;
+}
+
+.box ul li {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.box ul li i {
+    font-size: 20px;
+}
+
+.end {
+    display: flex;
+    justify-content: center;
+}

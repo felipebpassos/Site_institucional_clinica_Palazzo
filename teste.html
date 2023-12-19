@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nome da sua Clínica</title>
+    <meta name="description" content="Clínica Odontológica e Estética Referência no Estado de Sergipe">
+    <meta name="keywords" content="odontologia, estética, saúde bucal, Sergipe">
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4; /* Adicione a cor de fundo desejada */
+        }
+
+        header {
+            background-color: #3498db;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .line {
+            margin: 0;
+            font-size: 36px;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: baseline;
+        }
+
+        .animated-word {
+            display: inline-block;
+            transform: rotate(4deg) translateY(25px);
+            opacity: 0;
+            transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 class="line">
+            <span id="clinicTitle1" class="animated-word">Clínica Odontológica e Estética</span>
+        </h1>
+        <h1 class="line">
+            <span id="clinicTitle2" class="animated-word">Referência em Sergipe</span>
+        </h1>
+    </header>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            animateTitle();
+        });
+
+        function animateTitle() {
+            const lines = document.querySelectorAll('.line');
+
+            lines.forEach((line, lineIndex) => {
+                const words = line.innerText.split(' ');
+
+                line.innerHTML = words.map(word => `<span class="animated-word">${word}</span>`).join('&nbsp;');
+
+                const animatedWords = line.querySelectorAll('.animated-word');
+
+                animatedWords.forEach((word, index) => {
+                    const delay = (lineIndex * 500) + (index * 250); // Ajuste os milissegundos de atraso para cada palavra
+
+                    setTimeout(() => {
+                        word.style.transform = "rotate(0deg) translateY(0)"; // Transformação final
+                        word.style.opacity = 1;
+                    }, delay);
+                });
+            });
+        }
+    </script>
+
+</body>
+
+</html>
