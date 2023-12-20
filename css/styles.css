@@ -336,7 +336,7 @@ header {
 
 .ver-video-box {
     position: absolute;
-    top: 35%;
+    top: 55%;
     left: 50%;
     transform: translateX(-50%);
     display: none;
@@ -366,7 +366,7 @@ header {
 
 .apresentação-principal .headline {
     position: absolute;
-    top: 45%;
+    top: 35%;
     left: 50%;
     transform: translateX(-50%);
     z-index: 11;
