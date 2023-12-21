@@ -1,59 +1,89 @@
 <footer>
     <div class="container-fluid">
-        <div class="row d-flex justify-content-between mx-md-5">
-            <div class="col-md-4">
+        <div class="row d-flex justify-content-between mx-md-5" style="position:relative; padding-bottom: 60px;">
 
-                <div class="box">
-                    <div>
-                        <div style="margin-bottom: 10px;">
-                            <p>LOCALIZAÇÃO:</p>
-                        </div>
-                        <div style="line-height: 15px;">
-                            <p style="margin-bottom: 3px;">Rua Prof. José Caravalho de Meneses, 90</p>
-                            <p style="margin-top: 3px;">Jardins • Aracaju, SE</p>
-                        </div>
-                    </div>
+            <div class="col-md-4" style="margin-bottom: 60px; padding: 0 30px; min-width: 300px;">
+
+                <h4>Sobre a clínica</h4>
+
+                <img src="./img/ico2.png" style="margin-bottom: 30px;" alt="Logo - Clínica Palazzo">
+
+                <p style="line-height: 1.8em;">A Clínia Palazzo é onde a excelência se une ao cuidado, aprimorando sua
+                    experiência e autoestima. Nossa missão é proporcionar resultados
+                    que não apenas transformam sorrisos, mas também realçam a sua confiança interior.</p>
+
+                <div class="redes">
+                    <a href="https://www.instagram.com/palazzoclinica/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/palazzoclinica/"><i class="fa-brands fa-whatsapp"></i></a>
                 </div>
 
 
             </div>
-            <div class="col-md-4">
 
-                <div class="box">
-                    <div class="txt-box" style="margin-bottom: 10px;">
-                        <p>CONTATO:</p>
-                        <div style="line-height: 15px;">
-                            <p>+55 (79) 9 9600-0545</p>
+            <div class="col-md-4" style="margin-bottom: 60px; padding: 0 30px; min-width: 300px;">
+
+                <h4>Entre em contato</h4>
+
+                <ul>
+                    <li>
+                        <div style="display: flex; align-items: center; margin-bottom: 10px;">
+                            <i class="fa-solid fa-phone"></i><strong>
+                                <span>Telefone</span>
+                            </strong>
                         </div>
-                        <div style="line-height: 15px;">
-                            <p>exemplo123@gmail.com</p>
+                        <p>(79) 99176-9191</p>
+                    </li>
+                    <li>
+                        <div style="display: flex; align-items: center; margin-bottom: 10px;">
+                            <i class="fa-brands fa-whatsapp"></i><strong>
+                                <span>Whatsapp</span>
+                            </strong>
                         </div>
-                        <ul class="redes-sociais">
-                            <li><a href="https://www.instagram.com/paidorec/"><i class="fa-brands fa-instagram"
-                                        style="color: #ffffff;"></i></a></li>
-                            <li><a href=""><i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
+                        <p>(79) 99176-9191</p>
+                    </li>
+                    <li>
+                        <div style="display: flex; align-items: center; margin-bottom: 10px;">
+                            <i class="fa-solid fa-envelope"></i><strong>
+                                <span>E-mail</span>
+                            </strong>
+                        </div>
+                        <p>secretaria@clinicapalazzo.com.br</p>
+                    </li>
+                    <li>
+                        <div style="display: flex; align-items: center; margin-bottom: 10px;">
+                            <i class="fa-solid fa-location-dot"></i><strong>
+                                <span>Endereço</span>
+                            </strong>
+                        </div>
+                        <p>Rua Juarez Carvalho, 120A - Jardins, Aracaju - SE</p>
+                    </li>
+                    <li>
+                        <div style="display: flex; align-items: center; margin-bottom: 10px;">
+                            <i class="fa-regular fa-clock"></i><strong>
+                                <span>Horário de atendimento</span>
+                            </strong>
+                        </div>
+                        <p>Seg. a Sex. - 07h às 18:30h</p>
+                    </li>
+                </ul>
 
             </div>
-            <div class="col-md-4">
 
-                <div class="box">
-                    <div class="end" style="margin-bottom: 10px;">
-                        <div>
-                            <p>CRÉDITOS:</p>
-                            <p>Imagem de <a
-                                    href="https://br.freepik.com/vetores-gratis/colecao-caligrafica-divisoria-ornamental_12261828.htm#query=linha%20divisoria&position=1&from_view=keyword&track=ais">Freepik</a>
-                            </p>
-                            <p>Imagem de <a
-                                    href="https://br.freepik.com/psd-gratuitas/lindas-folhas-isoladas_37290394.htm#query=planta%20png&position=21&from_view=keyword&track=ais">Freepik</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
+            <div class="col-md-3" style="margin-bottom: 60px; padding: 0 30px;">
+                <ul class="links">
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="clinica.php">Clínica</a></li>
+                    <li><a href="tratamentos.php">Tratamentos</a></li>
+                    <li><a href="equipe.php">Equipe</a></li>
+                    <li><a href="tecnologias.php">Tecnologias</a></li>
+                </ul>
             </div>
+
+            <hr style="position:absolute; bottom:0; background-color:rgba(223, 214, 207, 0.2); width:100%;">
+        </div>
+        <div class="copyright" style="text-align:center;">
+            &copy; 2023, Todos os direitos reservados | Desenvolvido por <a href="https://www.instagram.com/simplifyweb/"
+                target="_blank">Simplify Web</a>
         </div>
     </div>
 </footer>

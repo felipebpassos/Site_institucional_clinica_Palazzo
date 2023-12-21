@@ -13,8 +13,12 @@ $_SESSION["page"] = "home";
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:title" content="Clínica Palazzo |">
-    <meta property="og:description" content="[DESCRIÇÃO DA CLÍNICA]">
-    <meta property="og:image" content="URL_DA_IMAGEM_PARA_COMPARTILHAMENTO">
+    <meta property="og:description" content="A Clínia Palazzo é o espaço onde a excelência se une ao cuidado, visando aprimorar sua
+                        experiência e autoestima. Estamos aqui para oferecer um serviço de alta qualidade, focado em atender às suas necessidades
+                        de forma humanizada. Cada interação é tratada com a máxima atenção e respeito, para que você sinta-se
+                        confortável durante todo o processo. Nossa missão é proporcionar resultados
+                        que não apenas transformam sorrisos, mas também realçam a sua confiança interior.">
+    <meta property="og:image" content="http://localhost/palazzo/img/ico2.png">
     <meta property="og:url" content="URL">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Clínica Palazzo">
@@ -32,6 +36,14 @@ $_SESSION["page"] = "home";
 
     <div id="fundo-loader">
         <div id="loader"></div>
+    </div>
+
+    <div class="video-player" id="videoPlayer">
+        <button class="close-btn" onclick="closeVideoModal()">Fechar</button>
+        <video id="modalVideo" controls autoplay>
+            <source src="" type="video/mp4">
+            Seu navegador não suporta o elemento de vídeo.
+        </video>
     </div>
 
     <?php include 'header.php' ?>
@@ -56,7 +68,7 @@ $_SESSION["page"] = "home";
                 </svg>
             </div>
 
-            <div class="overlay-main"></div>
+            <div class="overlay-main" onclick="openVideoModal('./videos/clinica.mp4')"></div>
 
 
             <img class="slides" src="./img/clinica-front.jpg" alt="Apresentação Clínica Palazzo">
@@ -83,32 +95,6 @@ $_SESSION["page"] = "home";
                 <span style="margin-left: 20px; color: rgb(223, 214, 207);">Saiba mais</span>
             </div>
 
-            <!-- <video id="vsl" class="K8MSra" role="presentation" crossorigin="anonymous" playsinline="" preload="auto"
-                muted="" loop="" tabindex="-1" autoplay
-                src="./videos/main.mp4"
-                style="height: 100%; width: 100%; object-fit: cover; object-position: center center; opacity: 1;"></video>
-            <button id="restart" class="restart" style="display: none;"><img src="./img/restart.png" alt=""></button>
-            <button id="mute" class="unmute"><img src="./img/mute.png" alt=""></button> -->
-
-            <div class="texto" style="display:none;">
-
-                <div class="conteudo">
-
-                    <h1>Transformando Sorrisos,<br> Refletindo Confiança</h1><br>
-                    <h5>Onde Excelência e Cuidado Personalizado<br> se Unem para Você</h5>
-                    <p>A Clínia Palazzo é o espaço onde a excelência se une ao cuidado, visando aprimorar sua
-                        experiência e autoestima.
-                        Estamos aqui para oferecer um serviço de alta qualidade, focado em atender às suas necessidades
-                        de forma humanizada.
-                        Cada interação é tratada com a máxima atenção e respeito, para que você sinta-se
-                        confortável
-                        durante todo o processo.<br> Nossa missão é proporcionar resultados
-                        que não apenas transformam sorrisos, mas também realçam a sua confiança interior.</p>
-
-                </div>
-
-            </div>
-
         </section>
 
         <!-- Sessão Tratamentos -->
@@ -120,49 +106,65 @@ $_SESSION["page"] = "home";
                 <img src="./img/divisoria-bege.png" style="margin-bottom: 120px;"></img>
             </div>
 
-            <div class="tratamento-container">
-                <div class="tratamento left">
-                    <div class="conteudo-box">
-                        <h2>Tratamento 1</h2>
-                        <p>Descrição do tratamento 1...</p>
+            <div class="container" style="position: relative;">
+
+                <div class="row">
+                    <div class="col-md-6 mt-4">
+                        <div class="tratamento fade-in-slide-up">
+                            <div class="titulo">
+                                <img class="icone" src="./img/reabilitacao.png" alt="Impante Dentário">
+                                <h2>Implante</h2>
+                            </div>
+                            <p class="descricao fade-in-slide-up">
+                                Recupere seu sorriso completo e a autoconfiança com nossos implantes dentários de alta
+                                tecnologia. Transforme sua vida restaurando a estabilidade e a beleza natural dos seus
+                                dentes.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mt-4">
+                        <div class="tratamento fade-in-slide-up">
+                            <div class="titulo">
+                                <img class="icone" src="./img/clareamento.png" alt="Clareamento Dentário">
+                                <h2>Clareamento</h2>
+                            </div>
+                            <p class="descricao fade-in-slide-up">Desperte o brilho em seu sorriso! Nosso tratamento oferece resultados
+                                visíveis, devolvendo a luminosidade aos seus dentes. Sorria com confiança e destaque-se
+                                com um sorriso mais radiante.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="tratamento-container">
-                <div class="tratamento right">
-                    <div class="conteudo-box">
-                        <h2>Tratamento 2</h2>
-                        <p>Descrição do tratamento 2...</p>
+                <div class="row">
+                    <div class="col-md-6 mt-4">
+                        <div class="tratamento fade-in-slide-up">
+                            <img class="capa" src="./img/ortodontia.jpg" alt="Ortodontia">
+                            <h2>Ortodontia</h2>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mt-4">
+                        <div class="tratamento fade-in-slide-up">
+                            <img class="capa" src="./img/endodontia.png" alt="Endodontia">
+                            <h2>Endodontia</h2>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="tratamento-container">
-                <div class="tratamento left">
-                    <div class="conteudo-box">
-                        <h2>Tratamento 3</h2>
-                        <p>Descrição do tratamento 3...</p>
+                <div class="row">
+                    <div class="col-md-6 mt-4">
+
+                    </div>
+                    <div class="col-md-6 mt-4">
+
                     </div>
                 </div>
-            </div>
 
-            <div class="tratamento-container">
-                <div class="tratamento right">
-                    <div class="conteudo-box">
-                        <h2>Tratamento 4</h2>
-                        <p>Descrição do tratamento 4...</p>
-                    </div>
+                <div class="ver-mais">
+                    <a href="tratamentos.php">Ver mais</a>
                 </div>
             </div>
 
         </section>
-
-        <div class="foto-fixa">
-            <img src="./img/img10.png" alt="Fachada">
-        </div>
-
-        <div class="espaço"></div>
 
         <!-- Sessão Equipe -->
         <section class="equipe">
@@ -170,7 +172,7 @@ $_SESSION["page"] = "home";
             <div class="divisoria fade-in-slide-up">
                 <img src="./img/divisoria-preta.png" style="margin-bottom: 120px;"></img>
             </div>
-            <div class="container">
+            <div class="container" style="position: relative;">
                 <div class="row">
                     <div class="col-md-5">
                         <!-- Primeira coluna -->
@@ -244,8 +246,17 @@ $_SESSION["page"] = "home";
                         </div>
                     </div>
                 </div>
+                <div class="ver-mais">
+                    <a href="equipe.php">Ver mais</a>
+                </div>
             </div>
         </section>
+
+        <div class="foto-fixa">
+            <img src="./img/img10.png" alt="Fachada">
+        </div>
+
+        <div class="espaço"></div>
 
         <!-- Sessão Tecnologias -->
         <section class="tecnologias">
@@ -294,7 +305,8 @@ $_SESSION["page"] = "home";
         <section class="localizacao-img">
             <div class="container" style="margin: 0; width: 100%; padding:0; max-width: none;">
                 <div class="row" style="margin: 0;">
-                    <div class="col-md-6" style="padding: 0;">
+                    <div class="col-md-6" style="padding: 0; position: relative;">
+                        <div class="pelicula-transparente"></div>
                         <img src="./img/sala-espera.png" alt="Sala de Espera"
                             style="width: 100%; height: 100%; object-fit: cover;">
                     </div>
@@ -323,10 +335,10 @@ $_SESSION["page"] = "home";
 
     <script src="./js/loading.js"></script>
     <script src="./js/words-effect.js"></script>
+    <script src="./js/video-player.js"></script>
     <script src="./js/slide.js"></script>
     <script src="./js/toggle-menu.js"></script>
     <script src="./js/slide-fotos.js"></script>
-    <script src="./js/expansao-lateral.js"></script>
     <script src="./js/fade-in-slide-up.js"></script>
     <script src="./js/header-effect.js"></script>
 

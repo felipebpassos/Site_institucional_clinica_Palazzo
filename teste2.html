@@ -1,52 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+        .paralelogramo {
+            width: 320px;
+            height: 160px;
+            background-color: #bebebe; /* Cor de fundo */
+            transform: skewX(-20deg); /* Inclinação horizontal (pode ajustar o ângulo conforme necessário) */
+            box-shadow: 0px 0px 12px rgba(68, 68, 68, 0.5);
         }
-
-        .ver-video-box {
-            display: flex;
-            align-items: center;
-            width: 180px;
-            height: 50px;
-            border-radius: 25px;
-            background-color: rgba(0, 0, 0, 0.8);
-        }
-
-        .play-box {
-            background-color: rgb(201, 201, 201);
-            width: 50px;
-            height: 50px;
-            border-radius: 25px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .play-box svg {height: 20px; margin-left: 5px;}
     </style>
+    <title>Paralelogramo</title>
 </head>
-
 <body>
-    <div class="ver-video-box">
-        <div class="play-box">
-            <svg version="1.1" x="0px" y="0px" viewBox="0 0 12.8 15">
-                <path
-                    d="M0.2,14c0-0.7,0-12.5,0-13c0-0.6,0.6-1.1,1.2-0.7c0.5,0.3,9.9,6,10.8,6.5c0.6,0.3,0.5,1.1,0,1.4 c-0.6,0.4-10.1,6.1-10.8,6.5C0.9,15,0.2,14.7,0.2,14z">
-                </path>
-            </svg>
-        </div>
-        <span style="margin-left: 20px; color: rgb(223, 214, 207);">Ver vídeo</span>
-    </div>
+    <div class="paralelogramo"></div>
 </body>
-
 </html>
