@@ -128,7 +128,8 @@ $_SESSION["page"] = "home";
                                 <img class="icone" src="./img/clareamento.png" alt="Clareamento Dentário">
                                 <h2>Clareamento</h2>
                             </div>
-                            <p class="descricao fade-in-slide-up">Desperte o brilho em seu sorriso! Nosso tratamento oferece resultados
+                            <p class="descricao fade-in-slide-up">Desperte o brilho em seu sorriso! Nosso tratamento
+                                oferece resultados
                                 visíveis, devolvendo a luminosidade aos seus dentes. Sorria com confiança e destaque-se
                                 com um sorriso mais radiante.</p>
                         </div>
@@ -327,9 +328,14 @@ $_SESSION["page"] = "home";
     <!-- Div de sobreposição -->
     <div id="overlay" class="overlay"></div>
 
-    <a href="https://api.whatsapp.com/send?phone=SEU_NUMERO_DE_TELEFONE" class="whatsapp-button" target="_blank">
-        <img src="./img/whatsapp.png" alt="Ícone do WhatsApp">
-    </a>
+    <div class="whatsapp">
+        <div class="tooltip-container">
+            <a href="https://api.whatsapp.com/send?phone=5579991769191" class="whatsapp-button" target="_blank">
+                <img src="./img/whatsapp.png" alt="Ícone do WhatsApp">
+            </a>
+            <span class="tooltip">Entre em contato conosco!</span>
+        </div>
+    </div>
 
     <?php include 'footer.php' ?>
 
