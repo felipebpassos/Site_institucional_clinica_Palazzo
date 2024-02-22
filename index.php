@@ -39,7 +39,13 @@ $_SESSION["page"] = "home";
     </div>
 
     <div class="video-player" id="videoPlayer">
-        <button class="close-btn" onclick="closeVideoModal()">Fechar</button>
+        <button class="close-btn" onclick="closeVideoModal()">
+            <svg viewBox="0 0 12 12" style="height: 12px; width: 12px;">
+                <path
+                    d="M4.674 6L.344 1.05A.5.5 0 0 1 1.05.343L6 4.674l4.95-4.33a.5.5 0 0 1 .707.706L7.326 6l4.33 4.95a.5.5 0 0 1-.706.707L6 7.326l-4.95 4.33a.5.5 0 0 1-.707-.706L4.674 6z">
+                </path>
+            </svg>
+        </button>
         <video id="modalVideo" controls autoplay>
             <source src="" type="video/mp4">
             Seu navegador não suporta o elemento de vídeo.
@@ -69,7 +75,7 @@ $_SESSION["page"] = "home";
             </div>
 
             <div class="overlay-main" onclick="openVideoModal('./videos/clinica.mp4')"></div>
-
+            <div class="overlay-main" onclick="openVideoModal('./videos/entrevista.mp4')"></div>
 
             <img class="slides" src="./img/clinica-front.jpg" alt="Apresentação Clínica Palazzo">
 
@@ -77,10 +83,19 @@ $_SESSION["page"] = "home";
 
             <div class="headline">
                 <h1 class="line">
-                    <span id="clinicTitle1" class="animated-word">Clínica Palazzo é referência no cuidado</span>
+                    <span id="clinicTitle1" class="animated-word">Clínica Palazzo é equilíbrio perfeito</span>
                 </h1>
                 <h1 class="line">
-                    <span id="clinicTitle2" class="animated-word">e compromisso com o paciente</span>
+                    <span id="clinicTitle2" class="animated-word">entre inovação e acolhimento.</span>
+                </h1>
+            </div>
+
+            <div class="headline">
+                <h1 class="line">
+                    <span id="clinicTitle3" class="animated-word">Nossa Clínica é referência no cuidado</span>
+                </h1>
+                <h1 class="line">
+                    <span id="clinicTitle4" class="animated-word">e compromisso com o paciente</span>
                 </h1>
             </div>
 
@@ -92,7 +107,7 @@ $_SESSION["page"] = "home";
                         </path>
                     </svg>
                 </div>
-                <span style="margin-left: 20px; color: rgb(223, 214, 207);">Saiba mais</span>
+                <span style="margin-left: 20px; color: rgb(223, 214, 207);">Ver vídeo</span>
             </div>
 
         </section>
@@ -310,6 +325,12 @@ $_SESSION["page"] = "home";
                         <div class="pelicula-transparente"></div>
                         <img src="./img/sala-espera.png" alt="Sala de Espera"
                             style="width: 100%; height: 100%; object-fit: cover;">
+                        <div class="texto">
+                            <h4><i class="fa-solid fa-location-dot" style="margin-right: 20px;"></i>Rua Juarez Carvalho,
+                                120A</h4>
+                            <h4>Jardins, Aracaju - SE</h4><br>
+                            <h4>Seg. a Sex. - 07h às 18:30h</h4>
+                        </div>
                     </div>
                     <div class="col-md-6" style="padding:0;">
                         <div class="img2"><iframe

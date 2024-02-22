@@ -1,24 +1,59 @@
 document.addEventListener("DOMContentLoaded", function () {
-    animateTitle();
-});
+    let isFirstTime = true;
 
-function animateTitle() {
     const lines = document.querySelectorAll('.line');
 
-    lines.forEach((line, lineIndex) => {
-        const words = line.innerText.split(' ');
-
-        line.innerHTML = words.map(word => `<span class="animated-word">${word}</span>`).join('&nbsp;');
-
-        const animatedWords = line.querySelectorAll('.animated-word');
-
-        animatedWords.forEach((word, index) => {
-            const delay = (lineIndex * 500) + (index * 200); // Ajuste os milissegundos de atraso para cada palavra
-
-            setTimeout(() => {
-                word.style.transform = "rotate(0deg) translateY(0)"; // Transformação final
-                word.style.opacity = 1;
-            }, delay + 1400);
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                if (isFirstTime) {
+                    // Atraso de 1400 milissegundos (1,4 segundos) apenas na primeira vez
+                    setTimeout(() => {
+                        animateTitle(entry.target);
+                        isFirstTime = false;
+                    }, 1400);
+                } else {
+                    animateTitle(entry.target);
+                }
+            } else {
+                
+            }
         });
     });
+
+    lines.forEach(line => {
+        observer.observe(line);
+    });
+});
+
+
+function animateTitle(line) {
+    const words = line.innerText.split(' ');
+
+    // Salvar o HTML original como um atributo de dados
+    line.dataset.originalHTML = line.innerHTML;
+
+    line.innerHTML = words.map(word => `<span class="animated-word">${word}</span>`).join('&nbsp;');
+
+    const animatedWords = line.querySelectorAll('.animated-word');
+
+    animatedWords.forEach((word, index) => {
+        const delay = index * 200;
+
+        setTimeout(() => {
+            word.style.transform = "rotate(0deg) translateY(0)";
+            word.style.opacity = 1;
+        }, delay);
+    });
 }
+
+// Função para redefinir a animação
+function resetAnimation() {
+    
+}
+
+// Chamada da função resetAnimation ao passar para um novo slide
+// Suponha que você tenha alguma lógica para detectar a mudança de slide
+// Por exemplo, ao clicar nos botões de navegação
+// Coloque o seguinte código no ponto onde você detecta a mudança de slide
+resetAnimation();
