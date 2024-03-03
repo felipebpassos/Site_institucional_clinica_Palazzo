@@ -32,8 +32,10 @@ document.addEventListener('DOMContentLoaded', function () {
     function updateOverlayVisibility() {
         if (isOpen) {
             overlay.style.display = 'block'; // Mostra a sobreposição
+            document.body.style.overflow = 'hidden';
         } else {
             overlay.style.display = 'none'; // Oculta a sobreposição
+            document.body.style.overflow = 'auto';
         }
     }
 

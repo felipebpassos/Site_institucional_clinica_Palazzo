@@ -1,30 +1,20 @@
-<div class="top-header">
-
-    <div class="redes-sociais">
-
-        <ul>
-
-            <li><a href=""><button><i class="fa-brands fa-facebook"></i></button></a></li>
-            <li><a href="https://www.instagram.com/palazzoclinica/"><button><i
-                            class="fa-brands fa-instagram"></i></button></a></li>
-
-        </ul>
-
-    </div>
-
-</div>
-
-<header>
+<header id="page-header" class="transparente">
 
     <div class="header-container">
 
-        <button class="agendamento">Agende uma consulta</button>
+        <div class="logo-2">
+            <img src="./img/ico2.png" alt="Logo Ícone">
+        </div>
 
         <a class="logo" href="index.php"><img src="./img/logo.png" alt="Palazzo logo"></a>
+        <a class="logodourada" href="index.php"><img src="./img/logo_dourada.png" alt="Palazzo logo dourada"></a>
 
         <button class="toggle-menu" id="menu-toggle">
-            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-bars" style="margin-right: 15px;"></i>
+            MENU
         </button>
+
+        <a href="" class="agendar-consulta">Agendar consulta</a>
 
     </div>
 
@@ -32,20 +22,37 @@
 
 <div class="menu">
 
-    <ul>
+    <div class="menu-container">
+        <div class="logo-menu">
+            <img src="./img/ico2.png" alt="Logo - Menu de Opções">
+        </div>
 
-        <li><a href="index.php" <?php if ($_SESSION["page"] === "home")
-            echo 'class="active"'; ?>>Início</a></li>
-        <li><a href="clinica.php" <?php if ($_SESSION["page"] === "clinica")
-            echo 'class="active"'; ?>>Clínica</a>
-        </li>
-        <li><a href="tratamentos.php" <?php if ($_SESSION["page"] === "tratamentos")
-            echo 'class="active"'; ?>>Tratamentos</a></li>
-        <li><a href="equipe.php" <?php if ($_SESSION["page"] === "equipe")
-            echo 'class="active"'; ?>>Equipe</a></li>
-        <li><a href="tecnologias.php" <?php if ($_SESSION["page"] === "tecnologias")
-            echo 'class="active"'; ?>>Tecnologias</a></li>
+        <ul>
 
-    </ul>
+            <li><a href="index.php" <?php if ($_SESSION["page"] === "home")
+                echo 'class="active"'; ?>>Início</a></li>
+            <li><a href="clinica.php" <?php if ($_SESSION["page"] === "clinica")
+                echo 'class="active"'; ?>>Clínica</a>
+            </li>
+            <li><a href="tratamentos.php" <?php if ($_SESSION["page"] === "tratamentos")
+                echo 'class="active"'; ?>>Tratamentos</a></li>
+            <li><a href="equipe.php" <?php if ($_SESSION["page"] === "equipe")
+                echo 'class="active"'; ?>>Equipe</a></li>
+            <li><a href="tecnologias.php" <?php if ($_SESSION["page"] === "tecnologias")
+                echo 'class="active"'; ?>>Tecnologias</a></li>
+
+        </ul>
+
+        <div class="redes-sociais">
+
+            <ul>
+
+                <li style="margin-right: 10px;"><a href="https://api.whatsapp.com/send?phone=5579991769191"><i class="fa-brands fa-whatsapp"></i></a></li>
+                <li><a href="https://www.instagram.com/palazzoclinica/"><i class="fa-brands fa-instagram"></i></a></li>
+
+            </ul>
+
+        </div>
+    </div>
 
 </div>

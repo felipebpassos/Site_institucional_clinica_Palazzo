@@ -61,6 +61,40 @@ $_SESSION["page"] = "home";
 
             <div class="fade-bottom"></div>
 
+            <div class="slider">
+                <div class="slide-container">
+                    <div class="slide">
+                        <video preload="auto" playsinline="" src="https://video-previews.elements.envatousercontent.com/053f9896-8270-465a-a615-cea94a62fb45/watermarked_preview/watermarked_preview.mp4" autoplay loop="loop"><span>This video is currently unavailable</span></video>
+                    </div>
+                    <div class="slide">
+                        <img class="slides" src="./img/thumbnail-main.png"
+                            alt="Entrevista Winícius Aragão - Clínica Palazzo">
+                        <div class="overlay-main"></div>
+                        <div class="ver-video-box" onclick="openVideoModal('./videos/entrevista.mp4')">
+                            <div class="play-box">
+                                <svg version="1.1" x="0px" y="0px" viewBox="0 0 12.8 15">
+                                    <path
+                                        d="M0.2,14c0-0.7,0-12.5,0-13c0-0.6,0.6-1.1,1.2-0.7c0.5,0.3,9.9,6,10.8,6.5c0.6,0.3,0.5,1.1,0,1.4 c-0.6,0.4-10.1,6.1-10.8,6.5C0.9,15,0.2,14.7,0.2,14z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <span style="margin-left: 20px; color: rgb(223, 214, 207);">Ver vídeo</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pagination">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Sessão Tratamentos -->
+        <section class="tratamentos">
+
+        <!--
             <div class="arrow" id="preview" onclick="plusSlides(-1)">
                 <svg width="12" height="24" viewBox="0 0 8 16" fill="rgb(223, 214, 207)">
                     <path d="M.732 9.547L8 16 4 8l4-8L.732 6.453A1.996 1.996 0 0 0 0 8c0 .623.285 1.18.732 1.547z">
@@ -73,112 +107,7 @@ $_SESSION["page"] = "home";
                     </path>
                 </svg>
             </div>
-
-            <div class="overlay-main" onclick="openVideoModal('./videos/clinica.mp4')"></div>
-            <div class="overlay-main" onclick="openVideoModal('./videos/entrevista.mp4')"></div>
-
-            <img class="slides" src="./img/clinica-front.jpg" alt="Apresentação Clínica Palazzo">
-
-            <img class="slides" src="./img/thumbnail-main.png" alt="Entrevista Winícius Aragão - Clínica Palazzo">
-
-            <div class="headline">
-                <h1 class="line">
-                    <span id="clinicTitle1" class="animated-word">Clínica Palazzo é equilíbrio perfeito</span>
-                </h1>
-                <h1 class="line">
-                    <span id="clinicTitle2" class="animated-word">entre inovação e acolhimento.</span>
-                </h1>
-            </div>
-
-            <div class="headline">
-                <h1 class="line">
-                    <span id="clinicTitle3" class="animated-word">Nossa Clínica é referência no cuidado</span>
-                </h1>
-                <h1 class="line">
-                    <span id="clinicTitle4" class="animated-word">e compromisso com o paciente</span>
-                </h1>
-            </div>
-
-            <div class="ver-video-box">
-                <div class="play-box">
-                    <svg version="1.1" x="0px" y="0px" viewBox="0 0 12.8 15">
-                        <path
-                            d="M0.2,14c0-0.7,0-12.5,0-13c0-0.6,0.6-1.1,1.2-0.7c0.5,0.3,9.9,6,10.8,6.5c0.6,0.3,0.5,1.1,0,1.4 c-0.6,0.4-10.1,6.1-10.8,6.5C0.9,15,0.2,14.7,0.2,14z">
-                        </path>
-                    </svg>
-                </div>
-                <span style="margin-left: 20px; color: rgb(223, 214, 207);">Ver vídeo</span>
-            </div>
-
-        </section>
-
-        <!-- Sessão Tratamentos -->
-        <section class="tratamentos">
-
-            <h2 class="section-title fade-in-slide-up">TRATAMENTOS</h2>
-
-            <div class="divisoria fade-in-slide-up">
-                <img src="./img/divisoria-bege.png" style="margin-bottom: 120px;"></img>
-            </div>
-
-            <div class="container" style="position: relative;">
-
-                <div class="row">
-                    <div class="col-md-6 mt-4">
-                        <div class="tratamento fade-in-slide-up">
-                            <div class="titulo">
-                                <img class="icone" src="./img/reabilitacao.png" alt="Impante Dentário">
-                                <h2>Implante</h2>
-                            </div>
-                            <p class="descricao fade-in-slide-up">
-                                Recupere seu sorriso completo e a autoconfiança com nossos implantes dentários de alta
-                                tecnologia. Transforme sua vida restaurando a estabilidade e a beleza natural dos seus
-                                dentes.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mt-4">
-                        <div class="tratamento fade-in-slide-up">
-                            <div class="titulo">
-                                <img class="icone" src="./img/clareamento.png" alt="Clareamento Dentário">
-                                <h2>Clareamento</h2>
-                            </div>
-                            <p class="descricao fade-in-slide-up">Desperte o brilho em seu sorriso! Nosso tratamento
-                                oferece resultados
-                                visíveis, devolvendo a luminosidade aos seus dentes. Sorria com confiança e destaque-se
-                                com um sorriso mais radiante.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-md-6 mt-4">
-                        <div class="tratamento fade-in-slide-up">
-                            <img class="capa" src="./img/ortodontia.jpg" alt="Ortodontia">
-                            <h2>Ortodontia</h2>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mt-4">
-                        <div class="tratamento fade-in-slide-up">
-                            <img class="capa" src="./img/endodontia.png" alt="Endodontia">
-                            <h2>Endodontia</h2>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-md-6 mt-4">
-
-                    </div>
-                    <div class="col-md-6 mt-4">
-
-                    </div>
-                </div>
-
-                <div class="ver-mais">
-                    <a href="tratamentos.php">Ver mais</a>
-                </div>
-            </div>
+        -->
 
         </section>
 
@@ -195,10 +124,10 @@ $_SESSION["page"] = "home";
                         <div class="texto">
                             <h1 class="fade-in-slide-up">CONHEÇA NOSSA<br>EQUIPE</h1>
                             <h6 class="fade-in-slide-up">OS TALENTOS POR TRÁS DOS SORRISOS</h6>
-                            <p class="fade-in-slide-up">Estamos orgulhosos de apresentar nossa equipe de profissionais
+                            <p class="fade-in-slide-up">Temos orgulho em apresentar nossa equipe de profissionais
                                 altamente qualificados e
                                 dedicados.
-                                Cada membro da nossa equipe traz consigo um compromisso com a excelência e a busca pela
+                                Cada membro da nossa equipe tem compromisso com a excelência e a busca pela
                                 satisfação
                                 dos nossos pacientes. Com experiência e paixão pelo que fazem, eles estão prontos para
                                 oferecer o
@@ -360,14 +289,13 @@ $_SESSION["page"] = "home";
 
     <?php include 'footer.php' ?>
 
+    <script src="./js/header-effect.js"></script>
     <script src="./js/loading.js"></script>
     <script src="./js/words-effect.js"></script>
     <script src="./js/video-player.js"></script>
     <script src="./js/slide.js"></script>
     <script src="./js/toggle-menu.js"></script>
-    <script src="./js/slide-fotos.js"></script>
     <script src="./js/fade-in-slide-up.js"></script>
-    <script src="./js/header-effect.js"></script>
 
 </body>
 

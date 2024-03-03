@@ -1,19 +1,28 @@
-function handleScrollStyle() {
-    var header = document.querySelector('header'); // Seleciona o elemento header
-    var apresentacao = document.querySelector('.apresentação-principal');
-    var scrollPosition = window.scrollY || window.pageYOffset;
+window.addEventListener('scroll', function () {
+    var headerPage = document.getElementById('page-header');
+    var scrollTop = window.scrollY;
 
-    if (scrollPosition > 40) {
-        header.classList.add('header-scroll');
-        apresentacao.classList.add('apresentacao-scroll');
+    if (scrollTop === 0 && !headerPage.classList.contains('hovered')) {
+        headerPage.classList.add('transparente');
     } else {
-        header.classList.remove('header-scroll');
-        apresentacao.classList.remove('apresentacao-scroll');
+        headerPage.classList.remove('transparente');
     }
-}
+});
 
-// Verifique quando o usuário faz scroll
-window.addEventListener('scroll', handleScrollStyle);
+window.addEventListener('load', function () {
+    var headerPage = document.getElementById('page-header');
 
-// Execute a função inicialmente para verificar a posição de scroll na carga da página
-window.addEventListener('load', handleScrollStyle);
+    headerPage.addEventListener('mouseover', function () {
+        this.classList.add('hovered');
+    });
+
+    headerPage.addEventListener('mouseleave', function () {
+        this.classList.remove('hovered');
+        // Adiciona a classe .transparente após 4 segundos
+        setTimeout(function () {
+            if (!headerPage.classList.contains('hovered')) {
+                headerPage.classList.add('transparente');
+            }
+        }, 4000);
+    });
+});
