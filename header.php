@@ -2,10 +2,6 @@
 
     <div class="header-container">
 
-        <div class="logo-2">
-            <img src="./img/ico2.png" alt="Logo Ícone">
-        </div>
-
         <a class="logo" href="index.php"><img src="./img/logo.png" alt="Palazzo logo"></a>
         <a class="logodourada" href="index.php"><img src="./img/logo_dourada.png" alt="Palazzo logo dourada"></a>
 

@@ -205,11 +205,15 @@ header {
     width: 100%;
     background-color: rgb(223, 214, 207);
     z-index: 9997;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    transition: all 0.8s ease;
+    transition: background-color 0.8s ease, color 0.8s ease;
+}
+
+.header-fixed {
+    position: fixed;
 }
 
 header.transparente {
@@ -603,41 +607,38 @@ header.hovered .logodourada {
 }
 
 .tratamento {
-    width: 420px;
-    height: 260px;
-    background-color: rgb(223, 214, 207);
-    color: black;
+    width: 80%;
+    min-height: 300px;
+    background-color: rgb(10, 10, 10);
+    border-radius: 10px;
+    color: #ddd;
     /* Cor de fundo */
-    transform: skewX(-15deg) translateY(20px);
-    /* Inclinação horizontal (pode ajustar o ângulo conforme necessário) */
-    box-shadow: 0px 0px 16px rgba(165, 165, 165, 0.6);
+    transform: translateY(20px);
     margin: auto;
     margin-bottom: 100px;
     position: relative;
-    padding: 30px;
+    padding: 30px 50px;
 }
 
 .tratamento.fade-in-slide-up.ativo {
-    transform: skewX(-15deg) translateY(0);
-}
-
-.tratamento .titulo {
-    display: flex;
-    width: fit-content;
-    margin: auto;
-    align-items: center;
-    margin-bottom: 20px;
+    transform: translateY(0);
 }
 
 .tratamento .icone {
-    margin-right: 10px;
+    margin: 10px auto;
+    display: block;
+    height: 80px;
 }
 
-.tratamento .capa {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.tratamento .titulo {
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.tratamento .descricao {
+    color: #dddddd80;
+    text-align: center;
 }
 
 .foto-fixa {
@@ -671,6 +672,19 @@ header.hovered .logodourada {
     margin-bottom: 30px;
 }
 
+.row-album {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.quadro {
+    margin: 0 20px;
+    max-width: 300px;
+    min-width: 300px;
+    position: relative; /* For positioning elements inside */
+    box-sizing: border-box; /* Include padding and borders in width */
+}
+
 .box-img-pro {
     width: 100%;
     height: 300px;
@@ -687,6 +701,22 @@ header.hovered .logodourada {
 
 .box-img-pro img:hover {
     transform: scale(1.05);
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    z-index: 1000;
+    cursor: pointer;
+    user-select: none;
+}
+
+.arrow svg {
+    fill: #000;
+}
+
+.arrow:hover {
+    background-color: rgba(0,0,0,0.1);
 }
 
 .tecnologias {

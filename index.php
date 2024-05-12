@@ -34,6 +34,13 @@ $_SESSION["page"] = "home";
 
 <body>
 
+    <?php
+    if (isset($_GET['success'])) {
+        // Exibe um alerta Bootstrap com a mensagem de sucesso
+        echo '<div id="success-alert" class="alert alert-success fixed-alert" role="alert">' . $_GET['success'] . '</div>';
+    }
+    ?>
+
     <div id="fundo-loader">
         <div id="loader"></div>
     </div>
@@ -41,8 +48,7 @@ $_SESSION["page"] = "home";
     <div class="video-player" id="videoPlayer">
         <button class="close-btn" onclick="closeVideoModal()">
             <svg viewBox="0 0 12 12" style="height: 12px; width: 12px;">
-                <path
-                    d="M4.674 6L.344 1.05A.5.5 0 0 1 1.05.343L6 4.674l4.95-4.33a.5.5 0 0 1 .707.706L7.326 6l4.33 4.95a.5.5 0 0 1-.706.707L6 7.326l-4.95 4.33a.5.5 0 0 1-.707-.706L4.674 6z">
+                <path d="M4.674 6L.344 1.05A.5.5 0 0 1 1.05.343L6 4.674l4.95-4.33a.5.5 0 0 1 .707.706L7.326 6l4.33 4.95a.5.5 0 0 1-.706.707L6 7.326l-4.95 4.33a.5.5 0 0 1-.707-.706L4.674 6z">
                 </path>
             </svg>
         </button>
@@ -64,17 +70,26 @@ $_SESSION["page"] = "home";
             <div class="slider">
                 <div class="slide-container">
                     <div class="slide">
-                        <video preload="auto" playsinline="" src="https://video-previews.elements.envatousercontent.com/053f9896-8270-465a-a615-cea94a62fb45/watermarked_preview/watermarked_preview.mp4" autoplay loop="loop"><span>This video is currently unavailable</span></video>
+                        <video autoplay loop="loop">
+                            <source src="https://video-previews.elements.envatousercontent.com/053f9896-8270-465a-a615-cea94a62fb45/watermarked_preview/watermarked_preview.mp4" type="video/mp4">
+                            <span>This video is currently unavailable</span>
+                        </video>
+                        <script>
+                            document.addEventListener("DOMContentLoaded", function() {
+                                var videoPlayer = document.getElementById('video-main');
+
+                                // Reproduzir o vídeo automaticamente quando a página é carregada
+                                videoPlayer.play();
+                            });
+                        </script>
                     </div>
                     <div class="slide">
-                        <img class="slides" src="./img/thumbnail-main.png"
-                            alt="Entrevista Winícius Aragão - Clínica Palazzo">
+                        <img class="slides" src="./img/thumbnail-main.png" alt="Entrevista Winícius Aragão - Clínica Palazzo">
                         <div class="overlay-main"></div>
                         <div class="ver-video-box" onclick="openVideoModal('./videos/entrevista.mp4')">
                             <div class="play-box">
                                 <svg version="1.1" x="0px" y="0px" viewBox="0 0 12.8 15">
-                                    <path
-                                        d="M0.2,14c0-0.7,0-12.5,0-13c0-0.6,0.6-1.1,1.2-0.7c0.5,0.3,9.9,6,10.8,6.5c0.6,0.3,0.5,1.1,0,1.4 c-0.6,0.4-10.1,6.1-10.8,6.5C0.9,15,0.2,14.7,0.2,14z">
+                                    <path d="M0.2,14c0-0.7,0-12.5,0-13c0-0.6,0.6-1.1,1.2-0.7c0.5,0.3,9.9,6,10.8,6.5c0.6,0.3,0.5,1.1,0,1.4 c-0.6,0.4-10.1,6.1-10.8,6.5C0.9,15,0.2,14.7,0.2,14z">
                                     </path>
                                 </svg>
                             </div>
@@ -94,7 +109,7 @@ $_SESSION["page"] = "home";
         <!-- Sessão Tratamentos -->
         <section class="tratamentos">
 
-        <!--
+            <!--
             <div class="arrow" id="preview" onclick="plusSlides(-1)">
                 <svg width="12" height="24" viewBox="0 0 8 16" fill="rgb(223, 214, 207)">
                     <path d="M.732 9.547L8 16 4 8l4-8L.732 6.453A1.996 1.996 0 0 0 0 8c0 .623.285 1.18.732 1.547z">
@@ -107,7 +122,72 @@ $_SESSION["page"] = "home";
                     </path>
                 </svg>
             </div>
-        -->
+            -->
+
+            <h2 class="section-title fade-in-slide-up" style="margin-bottom: 120px;">NOSSAS ESPECIALIDADES</h2>
+
+            <div class="container" style="position: relative;">
+
+                <div class="row">
+                    <div class="col-md-6 mt-4">
+                        <div class="tratamento fade-in-slide-up">
+                            <img class="icone" src="./img/reabilitacao.png" alt="Impante Dentário">
+                            <div class="titulo">
+                                <h2>Implante</h2>
+                            </div>
+                            <p class="descricao fade-in-slide-up">
+                                Recupere seu sorriso completo e a autoconfiança com nossos implantes dentários de alta
+                                tecnologia. Transforme sua vida restaurando a estabilidade e a beleza natural dos seus
+                                dentes.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mt-4">
+                        <div class="tratamento fade-in-slide-up">
+                            <img class="icone" src="./img/clareamento.png" alt="Clareamento Dentário">
+                            <div class="titulo">
+                                <h2>Clareamento</h2>
+                            </div>
+                            <p class="descricao fade-in-slide-up">Desperte o brilho em seu sorriso! Nosso tratamento
+                                oferece resultados
+                                visíveis, devolvendo a luminosidade aos seus dentes. Sorria com confiança e destaque-se
+                                com um sorriso mais radiante.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 mt-4">
+                        <div class="tratamento fade-in-slide-up">
+                            <img class="icone" src="./img/orto.png" alt="Ortodontia">
+                            <div class="titulo">
+                                <h2>Ortodontia</h2>
+                            </div>
+                            <p class="descricao fade-in-slide-up">
+                                Recupere seu sorriso completo e a autoconfiança com nossos implantes dentários de alta
+                                tecnologia. Transforme sua vida restaurando a estabilidade e a beleza natural dos seus
+                                dentes.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mt-4">
+                        <div class="tratamento fade-in-slide-up">
+                            <img class="icone" src="./img/endo.png" alt="Endodontia">
+                            <div class="titulo">
+                                <h2>Endodontia</h2>
+                            </div>
+                            <p class="descricao fade-in-slide-up">Desperte o brilho em seu sorriso! Nosso tratamento
+                                oferece resultados
+                                visíveis, devolvendo a luminosidade aos seus dentes. Sorria com confiança e destaque-se
+                                com um sorriso mais radiante.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ver-mais">
+                    <a href="tratamentos.php">Ver mais</a>
+                </div>
+            </div>
 
         </section>
 
@@ -125,68 +205,63 @@ $_SESSION["page"] = "home";
                             <h1 class="fade-in-slide-up">CONHEÇA NOSSA<br>EQUIPE</h1>
                             <h6 class="fade-in-slide-up">OS TALENTOS POR TRÁS DOS SORRISOS</h6>
                             <p class="fade-in-slide-up">Temos orgulho em apresentar nossa equipe de profissionais
-                                altamente qualificados e
-                                dedicados.
+                                altamente qualificados.
                                 Cada membro da nossa equipe tem compromisso com a excelência e a busca pela
                                 satisfação
-                                dos nossos pacientes. Com experiência e paixão pelo que fazem, eles estão prontos para
+                                dos nossos pacientes. Com experiência e paixão pelo que fazem, nosso time de profissionais está pronto para
                                 oferecer o
                                 melhor atendimento em cuidados estéticos e, acima de tudo, de saúde.</p>
                         </div>
                     </div>
                     <div class="col-md-7">
-                        <!-- Segunda coluna -->
-                        <div class="container mt-5 fade-in-element"
-                            style="margin-bottom: 80px; margin-top: 0px !important;">
-                            <div class="row">
-                                <div class="col-md-6" id="f1">
+                        <div class="container mt-5 fade-in-element" style="margin-bottom: 80px; margin-top: 0px !important;">
+                            <div class="row fade-in-slide-up" style="overflow: hidden;">
+                                <div class="row-album" id="professional-row">
+                                    <!-- Profissional 1 -->
                                     <div class="quadro">
-                                        <div class="box-img-pro fade-in-slide-up" style="margin-bottom:20px;">
+                                        <div class="box-img-pro" style="margin-bottom:20px;">
                                             <img src="./img/img6.png" alt="Profissional 1">
                                         </div>
-                                        <h5 class="fade-in-slide-up">Dr. Winícius Aragão</h5>
-                                        <p class="fade-in-slide-up">Aprenda os atalhos de teclado personalizados de
-                                            Lucas que permitirão que
-                                            você flua pelo
-                                            programa com mais agilidade.</p>
+                                        <h5">Dr. Winícius Aragão</h5>
+                                            <p>Aprenda os atalhos de teclado personalizados de Lucas que permitirão que você flua pelo programa com mais agilidade.</p>
                                     </div>
-                                </div>
-                                <div class="col-md-6" id="f2">
+                                    <!-- Profissional 2 -->
                                     <div class="quadro">
-                                        <div class="box-img-pro fade-in-slide-up" style="margin-bottom:20px;">
+                                        <div class="box-img-pro" style="margin-bottom:20px;">
                                             <img src="./img/ESTHER-BRYCE.png" alt="Profissional 2">
                                         </div>
-                                        <h5 class="fade-in-slide-up">Dr. Esther-Bryce</h5>
-                                        <p class="fade-in-slide-up">Aprenda os atalhos de teclado personalizados de
-                                            Lucas que permitirão que
-                                            você flua pelo
-                                            programa com mais agilidade.</p>
+                                        <h5>Dr. Esther-Bryce</h5>
+                                        <p>Aprenda os atalhos de teclado personalizados de Lucas que permitirão que você flua pelo programa com mais agilidade.</p>
                                     </div>
-                                </div>
-                                <div class="col-md-6 mt-4" id="f3">
+                                    <!-- Profissional 3 -->
                                     <div class="quadro">
-                                        <div class="box-img-pro fade-in-slide-up" style="margin-bottom:20px;">
+                                        <div class="box-img-pro" style="margin-bottom:20px;">
                                             <img src="./img/LIANNE-WILSON.png" alt="Profissional 3">
                                         </div>
-                                        <h5 class="fade-in-slide-up">Dr. Lianne Wilson</h5>
-                                        <p class="fade-in-slide-up">Aprenda os atalhos de teclado personalizados de
-                                            Lucas que permitirão que
-                                            você flua pelo
-                                            programa com mais agilidade.</p>
+                                        <h5>Dr. Lianne Wilson</h5>
+                                        <p>Aprenda os atalhos de teclado personalizados de Lucas que permitirão que você flua pelo programa com mais agilidade.</p>
                                     </div>
-                                </div>
-                                <div class="col-md-6 mt-4" id="f4">
+                                    <!-- Profissional 4 -->
                                     <div class="quadro">
-                                        <div class="box-img-pro fade-in-slide-up" style="margin-bottom:20px;">
+                                        <div class="box-img-pro" style="margin-bottom:20px;">
                                             <img src="./img/JESSICA-KIM.png" alt="Profissional 4">
                                         </div>
-                                        <h5 class="fade-in-slide-up">Dr. Jéssica Kim</h5>
-                                        <p class="fade-in-slide-up">Aprenda os atalhos de teclado personalizados de
-                                            Lucas que permitirão que
-                                            você flua pelo
-                                            programa com mais agilidade.</p>
+                                        <h5>Dr. Jéssica Kim</h5>
+                                        <p>Aprenda os atalhos de teclado personalizados de Lucas que permitirão que você flua pelo programa com mais agilidade.</p>
                                     </div>
                                 </div>
+                            </div>
+                            <div class="arrow nav-btn-galeria-left fade-in-slide-up" style="left: 0;">
+                                <svg width="12" height="24" viewBox="0 0 8 16">
+                                    <path d="M.732 9.547L8 16 4 8l4-8L.732 6.453A1.996 1.996 0 0 0 0 8c0 .623.285 1.18.732 1.547z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div class="arrow nav-btn-galeria-right fade-in-slide-up" style="right: 0;">
+                                <svg width="12" height="24" viewBox="0 0 8 16">
+                                    <path d="M7.268 9.547L0 16l4-8-4-8 7.268 6.453C7.715 6.82 8 7.377 8 8c0 .623-.285 1.18-.732 1.547z">
+                                    </path>
+                                </svg>
                             </div>
                         </div>
                     </div>
@@ -203,12 +278,6 @@ $_SESSION["page"] = "home";
 
         <div class="espaço"></div>
 
-        <!-- Sessão Tecnologias -->
-        <section class="tecnologias">
-
-
-        </section>
-
         <!-- Sessão Fale Conosco -->
         <section class="fale-conosco">
             <h2 class="section-title fade-in-slide-up">PRÉ-AGENDE SUA CONSULTA</h2>
@@ -222,8 +291,7 @@ $_SESSION["page"] = "home";
                     </div>
 
                     <div class="form-group fade-in-slide-up">
-                        <input type="tel" class="form-control" id="telefone" placeholder="Telefone para contato"
-                            required>
+                        <input type="tel" class="form-control" id="telefone" placeholder="Telefone para contato" required>
                     </div>
 
                     <div class="form-group fade-in-slide-up">
@@ -237,8 +305,7 @@ $_SESSION["page"] = "home";
                     </div>
 
                     <div class="form-group fade-in-slide-up">
-                        <textarea class="form-control" id="mensagem" rows="4"
-                            placeholder="Digite uma mensagem (opcional)"></textarea>
+                        <textarea class="form-control" id="mensagem" rows="4" placeholder="Digite uma mensagem (opcional)"></textarea>
                     </div>
 
                     <button type="submit" class="btn btn-primary fade-in-slide-up">Enviar</button>
@@ -252,8 +319,7 @@ $_SESSION["page"] = "home";
                 <div class="row" style="margin: 0;">
                     <div class="col-md-6" style="padding: 0; position: relative;">
                         <div class="pelicula-transparente"></div>
-                        <img src="./img/sala-espera.png" alt="Sala de Espera"
-                            style="width: 100%; height: 100%; object-fit: cover;">
+                        <img src="./img/sala-espera.png" alt="Sala de Espera" style="width: 100%; height: 100%; object-fit: cover;">
                         <div class="texto">
                             <h4><i class="fa-solid fa-location-dot" style="margin-right: 20px;"></i>Rua Juarez Carvalho,
                                 120A</h4>
@@ -262,10 +328,7 @@ $_SESSION["page"] = "home";
                         </div>
                     </div>
                     <div class="col-md-6" style="padding:0;">
-                        <div class="img2"><iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.878131702858!2d-37.066823785669!3d-10.952509792204316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x70a7bdf625b48f7%3A0x3a349f40d129b1f1!2sRua%20Juarez%20Carvalho%2C%20120A%20-%20Jardins%2C%20Aracaju%20-%20SE%2C%2049025-370!5e0!3m2!1sen!2sbr!4v1668232320628!5m2!1sen!2sbr"
-                                width="100%" height="550px" style="border:0;" allowfullscreen=""
-                                loading="lazy"></iframe>
+                        <div class="img2"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.878131702858!2d-37.066823785669!3d-10.952509792204316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x70a7bdf625b48f7%3A0x3a349f40d129b1f1!2sRua%20Juarez%20Carvalho%2C%20120A%20-%20Jardins%2C%20Aracaju%20-%20SE%2C%2049025-370!5e0!3m2!1sen!2sbr!4v1668232320628!5m2!1sen!2sbr" width="100%" height="550px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                         </div>
                     </div>
                 </div>
@@ -289,11 +352,14 @@ $_SESSION["page"] = "home";
 
     <?php include 'footer.php' ?>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
     <script src="./js/header-effect.js"></script>
     <script src="./js/loading.js"></script>
     <script src="./js/words-effect.js"></script>
     <script src="./js/video-player.js"></script>
     <script src="./js/slide.js"></script>
+    <script src="./js/carrossel.js"></script>
     <script src="./js/toggle-menu.js"></script>
     <script src="./js/fade-in-slide-up.js"></script>
 
