@@ -27,6 +27,7 @@ $_SESSION["page"] = "home";
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/home.css">
     <link rel="stylesheet" href="./css/styles.css">
 
     <link rel="stylesheet" href="./phone-number-validation/build/css/intlTelInput.css">
@@ -70,6 +71,9 @@ $_SESSION["page"] = "home";
             <div class="slider">
                 <div class="slide-container">
                     <div class="slide">
+                        <div class="slide-relative">
+                            <img class="overlay-img" src="./img/overlay.png" alt="Overlay-Hero">
+                            <!--
                         <video autoplay loop="loop">
                             <source src="https://video-previews.elements.envatousercontent.com/053f9896-8270-465a-a615-cea94a62fb45/watermarked_preview/watermarked_preview.mp4" type="video/mp4">
                             <span>This video is currently unavailable</span>
@@ -82,18 +86,31 @@ $_SESSION["page"] = "home";
                                 videoPlayer.play();
                             });
                         </script>
+                        -->
+                            <div class="hero-text-container">
+                                <h1>Onde a beleza<br>encontra a precisão</h1>
+                                <p>Conheça nossa abordagem personalizada para sua saúde e bem-estar.</p>
+                                <div class="buttons-container">
+                                    <a href="clinica.php"><button class="hero-btn">A clínica</button></a>
+                                    <a href="tratamentos.php"><button class="hero-btn">Serviços</button></a>
+                                </div>
+                            </div>
+                            <img class="slides slide-img" id="winicius-hero" src="./img/drwinicius.jpg" alt="Consultório Clínica Palazzo | Winícius Aragão">
+                        </div>
                     </div>
                     <div class="slide">
-                        <img class="slides" src="./img/thumbnail-main.png" alt="Entrevista Winícius Aragão - Clínica Palazzo">
-                        <div class="overlay-main"></div>
-                        <div class="ver-video-box" onclick="openVideoModal('./videos/entrevista.mp4')">
-                            <div class="play-box">
-                                <svg version="1.1" x="0px" y="0px" viewBox="0 0 12.8 15">
-                                    <path d="M0.2,14c0-0.7,0-12.5,0-13c0-0.6,0.6-1.1,1.2-0.7c0.5,0.3,9.9,6,10.8,6.5c0.6,0.3,0.5,1.1,0,1.4 c-0.6,0.4-10.1,6.1-10.8,6.5C0.9,15,0.2,14.7,0.2,14z">
-                                    </path>
-                                </svg>
+                        <div class="slide-relative">
+                            <img class="slides" src="./img/thumbnail-main.png" alt="Entrevista Winícius Aragão - Clínica Palazzo">
+                            <div class="overlay-main"></div>
+                            <div class="ver-video-box" onclick="openVideoModal('./videos/entrevista.mp4')">
+                                <div class="play-box">
+                                    <svg version="1.1" x="0px" y="0px" viewBox="0 0 12.8 15">
+                                        <path d="M0.2,14c0-0.7,0-12.5,0-13c0-0.6,0.6-1.1,1.2-0.7c0.5,0.3,9.9,6,10.8,6.5c0.6,0.3,0.5,1.1,0,1.4 c-0.6,0.4-10.1,6.1-10.8,6.5C0.9,15,0.2,14.7,0.2,14z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <span style="margin-left: 20px; color: rgb(223, 214, 207);">Ver vídeo</span>
                             </div>
-                            <span style="margin-left: 20px; color: rgb(223, 214, 207);">Ver vídeo</span>
                         </div>
                     </div>
                 </div>
@@ -133,7 +150,7 @@ $_SESSION["page"] = "home";
                         <div class="tratamento fade-in-slide-up">
                             <img class="icone" src="./img/reabilitacao.png" alt="Impante Dentário">
                             <div class="titulo">
-                                <h2>Implante</h2>
+                                <h2>Implantes</h2>
                             </div>
                             <p class="descricao fade-in-slide-up">
                                 Recupere seu sorriso completo e a autoconfiança com nossos implantes dentários de alta
@@ -279,7 +296,7 @@ $_SESSION["page"] = "home";
         <div class="espaço"></div>
 
         <!-- Sessão Fale Conosco -->
-        <section class="fale-conosco">
+        <section class="fale-conosco" id="contato">
             <h2 class="section-title fade-in-slide-up">PRÉ-AGENDE SUA CONSULTA</h2>
             <div class="divisoria fade-in-slide-up">
                 <img src="./img/divisoria-preta.png" style="margin-bottom: 80px;"></img>
@@ -328,7 +345,7 @@ $_SESSION["page"] = "home";
                         </div>
                     </div>
                     <div class="col-md-6" style="padding:0;">
-                        <div class="img2"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.878131702858!2d-37.066823785669!3d-10.952509792204316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x70a7bdf625b48f7%3A0x3a349f40d129b1f1!2sRua%20Juarez%20Carvalho%2C%20120A%20-%20Jardins%2C%20Aracaju%20-%20SE%2C%2049025-370!5e0!3m2!1sen!2sbr!4v1668232320628!5m2!1sen!2sbr" width="100%" height="550px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        <div class="img2" style="height:100%;"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.878131702858!2d-37.066823785669!3d-10.952509792204316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x70a7bdf625b48f7%3A0x3a349f40d129b1f1!2sRua%20Juarez%20Carvalho%2C%20120A%20-%20Jardins%2C%20Aracaju%20-%20SE%2C%2049025-370!5e0!3m2!1sen!2sbr!4v1668232320628!5m2!1sen!2sbr" width="100%" height="550px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                         </div>
                     </div>
                 </div>
@@ -355,6 +372,7 @@ $_SESSION["page"] = "home";
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     <script src="./js/header-effect.js"></script>
+    <script src="./js/header-effect2.js"></script>
     <script src="./js/loading.js"></script>
     <script src="./js/words-effect.js"></script>
     <script src="./js/video-player.js"></script>

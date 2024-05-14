@@ -1,4 +1,5 @@
-<header id="page-header" class="transparente">
+<header id="page-header" <?php if ($_SESSION["page"] === "home")
+                echo 'class="transparente"'; ?>>
 
     <div class="header-container">
 
@@ -34,8 +35,9 @@
                 echo 'class="active"'; ?>>Tratamentos</a></li>
             <li><a href="equipe.php" <?php if ($_SESSION["page"] === "equipe")
                 echo 'class="active"'; ?>>Equipe</a></li>
-            <li><a href="tecnologias.php" <?php if ($_SESSION["page"] === "tecnologias")
-                echo 'class="active"'; ?>>Tecnologias</a></li>
+            <!--
+            <li><a href="tecnologias.php" <?php // if ($_SESSION["page"] === "tecnologias")
+                // echo 'class="active"'; ?>>Tecnologias</a></li> -->
 
         </ul>
 

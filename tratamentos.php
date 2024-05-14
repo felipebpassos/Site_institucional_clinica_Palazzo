@@ -22,6 +22,7 @@ $_SESSION["page"] = "tratamentos";
     <link rel="icon" href="./img/ico.ico">
 
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
 
     <link rel="stylesheet" href="./phone-number-validation/build/css/intlTelInput.css">
@@ -38,9 +39,10 @@ $_SESSION["page"] = "tratamentos";
     <!-- Div de sobreposição -->
     <div id="overlay" class="overlay"></div>
 
-    <footer></footer>
+    <?php include 'footer.php' ?>
 
     <script src="./js/toggle-menu.js"></script>
+    <script src="./js/header-effect2.js"></script>
 
 </body>
 

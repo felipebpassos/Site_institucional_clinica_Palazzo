@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+main {
+    padding-top: 80px;
+    padding-bottom: 200px;
+}
+
+section {
+    padding-top: 80px;
+}
+
+.titulo {
+    font-family: "Open Sans", sans-serif;
+    color: rgb(80, 80, 80);
+    margin-bottom: 40px;
+}
+
+.titulo-clinica {
+    position: relative;
+    display: inline-block;
+    font-size: 40px;
+}
+
+.titulo-clinica:after {
+    content: '';
+    display: block;
+    width: 100px; /* Comprimento do traço */
+    height: 3px; /* Espessura do traço */
+    background-color: rgb(138, 123, 112); /* Cor do traço */
+    margin-top: 10px; /* Distância abaixo do texto */
+}
+
+p {
+    color: rgb(100, 100, 100);
+    font-size: 18px;
+    line-height: 1.8em;
+    max-width: 700px;
+}
+
+.img-card {
+    flex: 1;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+}
