@@ -37,19 +37,17 @@ $_SESSION["page"] = "clinica";
 
         <section id="clinica" class="container mt-5">
             <div class="row">
-                <div class="col-md-6" style="padding:0;">
+                <div class="col-md-6 mosaico">
                     <!-- Espaço para a imagem -->
-                    <img src="URL_DA_IMAGEM" alt="Imagem da Clínica Palazzo" class="img-fluid">
+                    <img src="./img/mosaico.png" alt="Imagem da Clínica Palazzo" class="img-fluid">
                 </div>
                 <div class="col-md-6" style="margin-right:0; padding:0;">
-                    <h1 class="titulo titulo-clinica">A clínica Palazzo</h1>
-                    <p class="texto-clinica">
+                    <h1 class="titulo titulo-clinica fade-in-element">A clínica Palazzo</h1>
+                    <p class="texto-clinica fade-in-element">
                         Recupere seu sorriso completo e a autoconfiança com nossos implantes dentários de alta
                         tecnologia. Transforme sua vida restaurando a estabilidade e a beleza natural dos seus
                         dentes. Recupere seu sorriso completo e a autoconfiança com nossos implantes dentários de alta
                         tecnologia. Recupere seu sorriso completo e a autoconfiança com nossos implantes dentários de alta
-                        tecnologia. Transforme sua vida restaurando a estabilidade e a beleza natural dos seus
-                        dentes. Recupere seu sorriso completo e a autoconfiança com nossos implantes dentários de alta
                         tecnologia.<br><br>
                         Recupere seu sorriso completo e a autoconfiança com nossos implantes dentários de alta
                         tecnologia. Transforme sua vida restaurando a estabilidade e a beleza natural dos seus
@@ -58,7 +56,7 @@ $_SESSION["page"] = "clinica";
                     </p>
                     <!-- Botões lado a lado -->
                     <div class="d-flex">
-                        <a href="index.php#contato"><button type="button" class="btn-2">Agendar consulta</button></a>
+                        <a href="index.php#contato"><button type="button" class="btn-2" id="agendar">Agendar consulta</button></a>
                         <a href="tratamentos.php"><button type="button" class="btn-2">Serviços</button></a>
                         <a href="equipe.php"><button type="button" class="btn-2">Equipe</button></a>
                     </div>
@@ -67,18 +65,36 @@ $_SESSION["page"] = "clinica";
         </section>
 
         <section id="ambientes" class="container mt-5">
-            <h1 class="titulo text-center">Nosso espaço</h1>
-            <p class="text-center" style="margin: auto;">Um breve texto explicativo sobre os diferentes ambientes disponíveis na clínica, destacando as características especiais e conforto.</p>
+            <h1 class="titulo text-center titulo-espaco fade-in-element">Nosso espaço</h1>
+            <p class="text-center fade-in-element" style="margin: auto; margin-bottom: 100px;">Um breve texto explicativo sobre os diferentes ambientes disponíveis na clínica, destacando as características especiais e conforto.</p>
             <!-- Galeria de fotos -->
-            <div class="row" style="margin-top: 100px;">
+            <div class="row fade-in-element">
                 <div class="img-card">
-                    <img src="URL_DA_IMAGEM1" alt="Descrição da imagem 1" class="img-fluid">
+                    <div class="overlay-img"></div>
+                    <img src="./img/room1.jpeg" alt="Descrição da imagem 1" class="img-fluid">
                 </div>
                 <div class="img-card">
-                    <img src="URL_DA_IMAGEM2" alt="Descrição da imagem 2" class="img-fluid">
+                    <div class="overlay-img"></div>
+                    <img src="./img/room2.jpeg" alt="Descrição da imagem 2" class="img-fluid">
                 </div>
                 <div class="img-card">
-                    <img src="URL_DA_IMAGEM3" alt="Descrição da imagem 3" class="img-fluid">
+                    <div class="overlay-img"></div>
+                    <img src="./img/room3.jpeg" alt="Descrição da imagem 3" class="img-fluid">
+                </div>
+                <!-- Adicione mais colunas conforme necessário -->
+            </div>
+            <div class="row fade-in-element">
+                <div class="img-card">
+                    <div class="overlay-img"></div>
+                    <img src="./img/room4.jpeg" alt="Descrição da imagem 1" class="img-fluid">
+                </div>
+                <div class="img-card">
+                    <div class="overlay-img"></div>
+                    <img src="./img/room5.jpeg" alt="Descrição da imagem 2" class="img-fluid">
+                </div>
+                <div class="img-card">
+                    <div class="overlay-img"></div>
+                    <img src="./img/room6.jpeg" alt="Descrição da imagem 3" class="img-fluid">
                 </div>
                 <!-- Adicione mais colunas conforme necessário -->
             </div>
@@ -95,6 +111,8 @@ $_SESSION["page"] = "clinica";
 
     <script src="./js/toggle-menu.js"></script>
     <script src="./js/header-effect2.js"></script>
+    <script src="./js/fade-in-element.js"></script>
+    <script src="./js/proporcao.js"></script>
 
 </body>
 

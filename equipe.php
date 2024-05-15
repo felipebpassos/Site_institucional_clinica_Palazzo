@@ -36,11 +36,13 @@ $_SESSION["page"] = "equipe";
     <main>
 
         <section class="container mt-5">
+            <h1 class="titulo text-center titulo-equipe fade-in-element">Nossos especialistas</h1>
+            <p class="text-center fade-in-element" style="margin: auto; margin-bottom: 100px;">Um breve texto explicativo sobre os diferentes ambientes disponíveis na clínica, destacando as características especiais e conforto.</p>
             <div class="row">
                 <!-- Card do Profissional 1 -->
                 <div class="col-md-4">
                     <a href="profissional.php?nome=Winicius" class="card text-decoration-none text-dark">
-                        <img src="URL_DA_IMAGEM_DO_PROF1" class="card-img-top" alt="João">
+                        <img src="./img/winicius2.jpeg" class="card-img-top" alt="Dr. Winícius Aragão">
                         <div class="card-body">
                             <h5 class="card-title">Dr. Winícius Aragão</h5>
                             <p class="card-text">Dentista</p>
@@ -51,7 +53,7 @@ $_SESSION["page"] = "equipe";
                 <!-- Card do Profissional 2 -->
                 <div class="col-md-4">
                     <a href="profissional.php?nome=Ingrid" class="card text-decoration-none text-dark">
-                        <img src="URL_DA_IMAGEM_DO_PROF2" class="card-img-top" alt="Maria">
+                        <img src="./img/ingrid.png" class="card-img-top" alt="Dra. Ingrid">
                         <div class="card-body">
                             <h5 class="card-title">Dra. Ingrid</h5>
                             <p class="card-text">Biomédica esteta</p>
@@ -59,43 +61,43 @@ $_SESSION["page"] = "equipe";
                     </a>
                 </div>
 
+                <div class="col-md-4">
+                    <a href="profissional.php?nome=Carlos" class="card text-decoration-none text-dark">
+                        <img src="./img/paula.jpeg" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Paula Cavalcante</h5>
+                            <p class="card-text">Periodontista</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-4">
+                    <a href="profissional.php?nome=Carlos" class="card text-decoration-none text-dark">
+                        <img src="./img/luna.jpeg" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Luna Cardoso</h5>
+                            <p class="card-text">Periodontista</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-4">
+                    <a href="profissional.php?nome=Carlos" class="card text-decoration-none text-dark">
+                        <img src="./img/luana.jpeg" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Luana Vieira</h5>
+                            <p class="card-text">Ortodontista</p>
+                        </div>
+                    </a>
+                </div>
+
                 <!-- Card do Profissional 3 -->
                 <div class="col-md-4">
                     <a href="profissional.php?nome=Renata" class="card text-decoration-none text-dark">
-                        <img src="URL_DA_IMAGEM_DO_PROF3" class="card-img-top" alt="Carlos">
+                        <img src="./img/renata.png" class="card-img-top" alt="Dra. Renata Andrade">
                         <div class="card-body">
                             <h5 class="card-title">Dra. Renata Andrade</h5>
                             <p class="card-text">Dentista</p>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="col-md-4">
-                    <a href="profissional.php?nome=Carlos" class="card text-decoration-none text-dark">
-                        <img src="URL_DA_IMAGEM_DO_PROF3" class="card-img-top" alt="Carlos">
-                        <div class="card-body">
-                            <h5 class="card-title">Carlos Andrade</h5>
-                            <p class="card-text">Periodontista</p>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="col-md-4">
-                    <a href="profissional.php?nome=Carlos" class="card text-decoration-none text-dark">
-                        <img src="URL_DA_IMAGEM_DO_PROF3" class="card-img-top" alt="Carlos">
-                        <div class="card-body">
-                            <h5 class="card-title">Carlos Andrade</h5>
-                            <p class="card-text">Periodontista</p>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="col-md-4">
-                    <a href="profissional.php?nome=Carlos" class="card text-decoration-none text-dark">
-                        <img src="URL_DA_IMAGEM_DO_PROF3" class="card-img-top" alt="Carlos">
-                        <div class="card-body">
-                            <h5 class="card-title">Carlos Andrade</h5>
-                            <p class="card-text">Periodontista</p>
                         </div>
                     </a>
                 </div>
@@ -111,6 +113,7 @@ $_SESSION["page"] = "equipe";
 
     <script src="./js/toggle-menu.js"></script>
     <script src="./js/header-effect2.js"></script>
+    <script src="./js/fade-in-element.js"></script>
 
 </body>
 

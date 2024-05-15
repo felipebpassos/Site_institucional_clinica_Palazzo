@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            min-height: 100vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .box {
+            border-radius: 70px;
+        }
+        .molde {
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+        }
+        .molde img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .outer {
+            height: 500px;
+            width: 350px;
+            background-color: blue;
+            position: relative;
+        }
+        .outer .molde {
+            border-radius: 70px;
+        }
+        .inner {
+            padding: 15px;
+            position: absolute;
+            background-color: rgb(255, 255, 255);
+            width: 320px;
+            height: 200px;
+            bottom: -35px;
+            left: 50%;
+            overflow: hidden;
+        }
+        .innest {
+            border-radius: 60px;
+            background-color: aquamarine;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        .innest .molde {
+            border-radius: 60px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="outer box">
+            <div class="molde">
+                <img src="./img/room1.jpeg" alt="">
+            </div>
+            <div class="inner box">
+                <div class="innest box">
+                    <div class="molde">
+                        <img src="./img/consultorio.jpeg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

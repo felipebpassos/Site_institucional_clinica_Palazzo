@@ -102,7 +102,9 @@ $_SESSION["page"] = "home";
                         <div class="slide-relative">
                             <img class="slides" src="./img/thumbnail-main.png" alt="Entrevista Winícius Aragão - Clínica Palazzo">
                             <div class="overlay-main"></div>
-                            <div class="ver-video-box" onclick="openVideoModal('./videos/entrevista.mp4')">
+                            <div class="hero-content">
+                                <h1>A clínica Palazzo é referência no cuidado<br>e compromisso com o paciente</h1>
+                                <div class="ver-video-box" onclick="openVideoModal('./videos/entrevista.mp4')">
                                 <div class="play-box">
                                     <svg version="1.1" x="0px" y="0px" viewBox="0 0 12.8 15">
                                         <path d="M0.2,14c0-0.7,0-12.5,0-13c0-0.6,0.6-1.1,1.2-0.7c0.5,0.3,9.9,6,10.8,6.5c0.6,0.3,0.5,1.1,0,1.4 c-0.6,0.4-10.1,6.1-10.8,6.5C0.9,15,0.2,14.7,0.2,14z">
@@ -110,6 +112,7 @@ $_SESSION["page"] = "home";
                                     </svg>
                                 </div>
                                 <span style="margin-left: 20px; color: rgb(223, 214, 207);">Ver vídeo</span>
+                            </div>
                             </div>
                         </div>
                     </div>
@@ -221,17 +224,17 @@ $_SESSION["page"] = "home";
                         <div class="texto">
                             <h1 class="fade-in-slide-up">CONHEÇA NOSSA<br>EQUIPE</h1>
                             <h6 class="fade-in-slide-up">OS TALENTOS POR TRÁS DOS SORRISOS</h6>
-                            <p class="fade-in-slide-up">Temos orgulho em apresentar nossa equipe de profissionais
+                            <p class="fade-in-slide-up">Temos orgulho em apresentar nossos profissionais
                                 altamente qualificados.
                                 Cada membro da nossa equipe tem compromisso com a excelência e a busca pela
                                 satisfação
-                                dos nossos pacientes. Com experiência e paixão pelo que fazem, nosso time de profissionais está pronto para
+                                dos nossos pacientes. Com experiência e paixão pelo que fazem, nossos especialistas estão prontos para
                                 oferecer o
                                 melhor atendimento em cuidados estéticos e, acima de tudo, de saúde.</p>
                         </div>
                     </div>
                     <div class="col-md-7">
-                        <div class="container mt-5 fade-in-element" style="margin-bottom: 80px; margin-top: 0px !important;">
+                        <div class="container mt-5" style="margin-bottom: 80px; margin-top: 0px !important;">
                             <div class="row fade-in-slide-up" style="overflow: hidden;">
                                 <div class="row-album" id="professional-row">
                                     <!-- Profissional 1 -->
@@ -239,42 +242,42 @@ $_SESSION["page"] = "home";
                                         <div class="box-img-pro" style="margin-bottom:20px;">
                                             <img src="./img/img6.png" alt="Profissional 1">
                                         </div>
-                                        <h5">Dr. Winícius Aragão</h5>
+                                        <h5>Dr. Winícius Aragão</h5>
                                             <p>Aprenda os atalhos de teclado personalizados de Lucas que permitirão que você flua pelo programa com mais agilidade.</p>
                                     </div>
                                     <!-- Profissional 2 -->
                                     <div class="quadro">
                                         <div class="box-img-pro" style="margin-bottom:20px;">
-                                            <img src="./img/ESTHER-BRYCE.png" alt="Profissional 2">
+                                            <img src="./img/paula.jpeg" alt="Profissional 3">
                                         </div>
-                                        <h5>Dr. Esther-Bryce</h5>
+                                        <h5>Dra. Paula Cavalcante</h5>
                                         <p>Aprenda os atalhos de teclado personalizados de Lucas que permitirão que você flua pelo programa com mais agilidade.</p>
                                     </div>
                                     <!-- Profissional 3 -->
                                     <div class="quadro">
                                         <div class="box-img-pro" style="margin-bottom:20px;">
-                                            <img src="./img/LIANNE-WILSON.png" alt="Profissional 3">
+                                            <img src="./img/ingrid.png" alt="Profissional 2">
                                         </div>
-                                        <h5>Dr. Lianne Wilson</h5>
+                                        <h5>Dra. Ingrid</h5>
                                         <p>Aprenda os atalhos de teclado personalizados de Lucas que permitirão que você flua pelo programa com mais agilidade.</p>
                                     </div>
                                     <!-- Profissional 4 -->
                                     <div class="quadro">
                                         <div class="box-img-pro" style="margin-bottom:20px;">
-                                            <img src="./img/JESSICA-KIM.png" alt="Profissional 4">
+                                            <img src="./img/luana.jpeg" alt="Profissional 4">
                                         </div>
-                                        <h5>Dr. Jéssica Kim</h5>
+                                        <h5>Dra. Luana</h5>
                                         <p>Aprenda os atalhos de teclado personalizados de Lucas que permitirão que você flua pelo programa com mais agilidade.</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="arrow nav-btn-galeria-left fade-in-slide-up" style="left: 0;">
+                            <div class="arrow nav-btn-galeria-left fade-in-slide-up" style="left: -15px;">
                                 <svg width="12" height="24" viewBox="0 0 8 16">
                                     <path d="M.732 9.547L8 16 4 8l4-8L.732 6.453A1.996 1.996 0 0 0 0 8c0 .623.285 1.18.732 1.547z">
                                     </path>
                                 </svg>
                             </div>
-                            <div class="arrow nav-btn-galeria-right fade-in-slide-up" style="right: 0;">
+                            <div class="arrow nav-btn-galeria-right fade-in-slide-up" style="right: -15px;">
                                 <svg width="12" height="24" viewBox="0 0 8 16">
                                     <path d="M7.268 9.547L0 16l4-8-4-8 7.268 6.453C7.715 6.82 8 7.377 8 8c0 .623-.285 1.18-.732 1.547z">
                                     </path>
@@ -290,8 +293,10 @@ $_SESSION["page"] = "home";
         </section>
 
         <div class="foto-fixa">
-            <img src="./img/img10.png" alt="Fachada">
+            <img src="./img/consultorio2.jpg" alt="Fachada">
         </div>
+
+        <div class="overlay-background"></div>
 
         <div class="espaço"></div>
 

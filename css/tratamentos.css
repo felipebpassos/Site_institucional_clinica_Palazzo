@@ -1,0 +1,36 @@
+.foto-fixa img {
+    height: 100vh;
+    width: auto !important;
+}
+
+.overlay-background {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+main {
+    padding-top: 100px;
+}
+
+section {
+    padding-top: 60px;
+    height: 600px;
+}
+
+section h1 {
+    font-size: 70px;
+    margin-bottom: 80px;
+}
+
+section img {
+    height: 250px;
+    margin-left: 60px;
+}
+
+.full {
+    background-color: rgb(223, 214, 207);
+}
+
+.transparente {
+    color: rgb(223, 214, 207);
+    background-color: transparent;
+}
