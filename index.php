@@ -100,19 +100,24 @@ $_SESSION["page"] = "home";
                     </div>
                     <div class="slide">
                         <div class="slide-relative">
-                            <img class="slides" src="./img/thumbnail-main.png" alt="Entrevista Winícius Aragão - Clínica Palazzo">
+                            <picture class="slides">
+                            <source srcset="./img/thumbnail-main.png" media="(min-width: 768px)">
+                                <source srcset="./img/thumbnail-main-portrait.png" media="(min-width: 500px)">
+                                <img src="./img/thumbnail-main-portrait-min.png" alt="Entrevista Winícius Aragão - Clínica Palazzo">
+                            </picture>
+
                             <div class="overlay-main"></div>
                             <div class="hero-content">
-                                <h1>A clínica Palazzo é referência no cuidado<br>e compromisso com o paciente</h1>
+                                <h1>Excelência e Dedicação Total<br>aos Pacientes</h1>
                                 <div class="ver-video-box" onclick="openVideoModal('./videos/entrevista.mp4')">
-                                <div class="play-box">
-                                    <svg version="1.1" x="0px" y="0px" viewBox="0 0 12.8 15">
-                                        <path d="M0.2,14c0-0.7,0-12.5,0-13c0-0.6,0.6-1.1,1.2-0.7c0.5,0.3,9.9,6,10.8,6.5c0.6,0.3,0.5,1.1,0,1.4 c-0.6,0.4-10.1,6.1-10.8,6.5C0.9,15,0.2,14.7,0.2,14z">
-                                        </path>
-                                    </svg>
+                                    <div class="play-box">
+                                        <svg version="1.1" x="0px" y="0px" viewBox="0 0 12.8 15">
+                                            <path d="M0.2,14c0-0.7,0-12.5,0-13c0-0.6,0.6-1.1,1.2-0.7c0.5,0.3,9.9,6,10.8,6.5c0.6,0.3,0.5,1.1,0,1.4 c-0.6,0.4-10.1,6.1-10.8,6.5C0.9,15,0.2,14.7,0.2,14z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                    <span style="color: rgb(223, 214, 207);">Ver vídeo</span>
                                 </div>
-                                <span style="margin-left: 20px; color: rgb(223, 214, 207);">Ver vídeo</span>
-                            </div>
                             </div>
                         </div>
                     </div>
@@ -144,7 +149,7 @@ $_SESSION["page"] = "home";
             </div>
             -->
 
-            <h2 class="section-title fade-in-slide-up" style="margin-bottom: 120px;">NOSSAS ESPECIALIDADES</h2>
+            <h2 class="section-title fade-in-slide-up margin-big">NOSSAS ESPECIALIDADES</h2>
 
             <div class="container" style="position: relative;">
 
@@ -243,7 +248,7 @@ $_SESSION["page"] = "home";
                                             <img src="./img/img6.png" alt="Profissional 1">
                                         </div>
                                         <h5>Dr. Winícius Aragão</h5>
-                                            <p>Aprenda os atalhos de teclado personalizados de Lucas que permitirão que você flua pelo programa com mais agilidade.</p>
+                                        <p>Aprenda os atalhos de teclado personalizados de Lucas que permitirão que você flua pelo programa com mais agilidade.</p>
                                     </div>
                                     <!-- Profissional 2 -->
                                     <div class="quadro">
@@ -271,13 +276,13 @@ $_SESSION["page"] = "home";
                                     </div>
                                 </div>
                             </div>
-                            <div class="arrow nav-btn-galeria-left fade-in-slide-up" style="left: -15px;">
+                            <div class="arrow nav-btn-galeria-left fade-in-slide-up">
                                 <svg width="12" height="24" viewBox="0 0 8 16">
                                     <path d="M.732 9.547L8 16 4 8l4-8L.732 6.453A1.996 1.996 0 0 0 0 8c0 .623.285 1.18.732 1.547z">
                                     </path>
                                 </svg>
                             </div>
-                            <div class="arrow nav-btn-galeria-right fade-in-slide-up" style="right: -15px;">
+                            <div class="arrow nav-btn-galeria-right fade-in-slide-up">
                                 <svg width="12" height="24" viewBox="0 0 8 16">
                                     <path d="M7.268 9.547L0 16l4-8-4-8 7.268 6.453C7.715 6.82 8 7.377 8 8c0 .623-.285 1.18-.732 1.547z">
                                     </path>
@@ -306,17 +311,17 @@ $_SESSION["page"] = "home";
             <div class="divisoria fade-in-slide-up">
                 <img src="./img/divisoria-preta.png" style="margin-bottom: 80px;"></img>
             </div>
-            <div class="container mt-5" style="max-width: 600px; margin-top:0 !important;">
+            <div class="container mt-5 fade-in-slide-up" style="max-width: 600px; margin-top:0 !important;">
                 <form>
-                    <div class="form-group fade-in-slide-up">
+                    <div class="form-group">
                         <input type="text" class="form-control" id="nome" placeholder="Digite seu nome" required>
                     </div>
 
-                    <div class="form-group fade-in-slide-up">
+                    <div class="form-group">
                         <input type="tel" class="form-control" id="telefone" placeholder="Telefone para contato" required>
                     </div>
 
-                    <div class="form-group fade-in-slide-up">
+                    <div class="form-group">
                         <select class="form-control" id="tratamento" required>
                             <option value="" disabled selected>Selecione o tratamento</option>
                             <option value="limpeza">Limpeza</option>
@@ -326,11 +331,11 @@ $_SESSION["page"] = "home";
                         </select>
                     </div>
 
-                    <div class="form-group fade-in-slide-up">
+                    <div class="form-group">
                         <textarea class="form-control" id="mensagem" rows="4" placeholder="Digite uma mensagem (opcional)"></textarea>
                     </div>
 
-                    <button type="submit" class="btn btn-primary fade-in-slide-up">Enviar</button>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
                 </form>
             </div>
         </section>
@@ -385,6 +390,7 @@ $_SESSION["page"] = "home";
     <script src="./js/carrossel.js"></script>
     <script src="./js/toggle-menu.js"></script>
     <script src="./js/fade-in-slide-up.js"></script>
+    <script src="./js/imagem-fundo.js"></script>
 
 </body>
 

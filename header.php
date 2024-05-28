@@ -8,10 +8,10 @@
 
         <button class="toggle-menu" id="menu-toggle">
             <i class="fa-solid fa-bars" style="margin-right: 15px;"></i>
-            MENU
+            <span>MENU</span>
         </button>
 
-        <a href="" class="agendar-consulta">Agendar consulta</a>
+        <a href="index.php#contato" class="agendar-consulta">Agendar consulta</a>
 
     </div>
 
@@ -35,6 +35,7 @@
                 echo 'class="active"'; ?>>Tratamentos</a></li>
             <li><a href="equipe.php" <?php if ($_SESSION["page"] === "equipe")
                 echo 'class="active"'; ?>>Equipe</a></li>
+            <li><a href="index.php#contato">Agendar consulta</a></li>
             <!--
             <li><a href="tecnologias.php" <?php // if ($_SESSION["page"] === "tecnologias")
                 // echo 'class="active"'; ?>>Tecnologias</a></li> -->

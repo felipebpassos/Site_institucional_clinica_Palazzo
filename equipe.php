@@ -38,7 +38,7 @@ $_SESSION["page"] = "equipe";
         <section class="container mt-5">
             <h1 class="titulo text-center titulo-equipe fade-in-element">Nossos especialistas</h1>
             <p class="text-center fade-in-element" style="margin: auto; margin-bottom: 100px;">Um breve texto explicativo sobre os diferentes ambientes disponíveis na clínica, destacando as características especiais e conforto.</p>
-            <div class="row">
+            <div class="row fade-in-element">
                 <!-- Card do Profissional 1 -->
                 <div class="col-md-4">
                     <a href="profissional.php?nome=Winicius" class="card text-decoration-none text-dark">

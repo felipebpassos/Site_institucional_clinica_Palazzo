@@ -8,6 +8,9 @@
     padding: 0;
 }
 
+a {color: inherit;}
+button {color: inherit;}
+
 li {
     list-style: none;
 }
@@ -69,7 +72,7 @@ button {
 #loader {
     width: 300px;
     height: 80px;
-    background: rgb(223, 214, 207) url("http://localhost/Palazzo/img/logo.png") center no-repeat;
+    background: rgb(223, 214, 207) url("../img/logo.png") center no-repeat;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -102,6 +105,10 @@ button {
     margin-bottom: 20px;
 }
 
+.margin-big {
+    margin-bottom: 120px;
+}
+
 .divisoria {
     width: 150px;
     margin: auto;
@@ -122,13 +129,13 @@ button {
     border: 1px solid black;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     font-weight: bold;
-    transition: background-color 0.6s ease;
+    transition: all 0.6s ease;
 }
 
 .btn-primary:hover {
     color: black;
-    border: 3px solid black;
-    background-color: rgb(223, 214, 207);
+    border: 1px solid rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
 }
 
 .btn-2 {
@@ -297,6 +304,7 @@ header.hovered .logodourada {
     width: 100%;
     align-items: center;
     justify-content: space-between;
+    position: relative;
 }
 
 .agendar-consulta {
@@ -325,7 +333,7 @@ header.hovered .logodourada {
 
 .toggle-menu {
     height: 40px;
-    width: 30px;
+    width: fit-content;
     font-size: 18px;
     background-color: inherit;
     border: none;
@@ -375,6 +383,10 @@ header.hovered .logodourada {
     transform: translate(-50%, -50%) scale(0.8);
     opacity: 0;
     transition: opacity 0.2s ease;
+}
+
+.logo img, .logodourada img {
+    width: 300px;
 }
 
 .menu {
@@ -540,9 +552,15 @@ header.hovered .logodourada {
     z-index: 20;
 }
 
-.slide img {
+.slide picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide img, .slide picture {
     min-width: 100%;
-    min-height: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
@@ -570,6 +588,7 @@ header.hovered .logodourada {
 
 .hero-text-container {
     width: 34%;
+    min-width: 350px;
     /* Ajuste a largura conforme necessário */
     text-align: left;
     position: absolute;
@@ -607,7 +626,6 @@ header.hovered .logodourada {
     cursor: pointer;
     transition: all 0.3s, color 0.3s;
     outline: none !important;
-    ;
 }
 
 .hero-btn:hover {
@@ -659,9 +677,13 @@ header.hovered .logodourada {
 
 .hero-content h1 {
     color: rgb(206, 194, 184);
-    font-size: 2.4em;
+    font-size: 2.5em;
     text-align: center;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    text-shadow: 
+        0 0 10px rgba(0, 0, 0, 0.9),  /* Primeira sombra: sombra preta difusa e mais transparente */
+        0 0 20px rgba(0, 0, 0, 0.8),  /* Segunda sombra: sombra preta mais difusa e mais transparente */
+        0 0 30px rgba(0, 0, 0, 0.6),  /* Terceira sombra: sombra preta ainda mais difusa e mais transparente */
+        0 0 40px rgba(0, 0, 0, 0.4);
 }
 
 .ver-video-box {
@@ -674,6 +696,10 @@ header.hovered .logodourada {
     cursor: pointer;
     z-index: 20;
     margin: 40px auto;
+}
+
+.ver-video-box span {
+    margin-left: 20px;
 }
 
 .play-box {
@@ -742,7 +768,7 @@ header.hovered .logodourada {
     /* Cor de fundo */
     transform: translateY(20px);
     margin: auto;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
     position: relative;
     padding: 30px 50px;
 }
@@ -770,15 +796,18 @@ header.hovered .logodourada {
 }
 
 .foto-fixa {
-    width: 100%;
+    min-width: 100%;
     position: fixed;
-    top: 0;
     left: 0;
     z-index: -2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .foto-fixa img {
-    width: 100%;
+    height: auto;
+    min-width: 100%;
 }
 
 .overlay-background {
@@ -855,9 +884,9 @@ header.hovered .logodourada {
     fill: #000;
 }
 
-.arrow:hover {
-    background-color: rgba(0, 0, 0, 0.1);
-}
+.nav-btn-galeria-left {left: -15px;}
+
+.nav-btn-galeria-right {right: -15px;}
 
 .tecnologias {
     background-color: black;
@@ -909,6 +938,10 @@ header.hovered .logodourada {
     z-index: 6;
     color: rgb(223, 214, 207);
     text-align: center;
+}
+
+.localizacao-img h4 {
+    text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.7);
 }
 
 .whatsapp {
@@ -1013,4 +1046,155 @@ footer .links a {
 
 footer .copyright {
     font-size: 14px;
+}
+
+@media (max-width: 1000px) {
+    .tratamentos p {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 750px) {
+    header {
+        height: 100px;
+    }
+    .header-container {
+        margin: 0 20px;
+        justify-content: end;
+    }
+    .toggle-menu {font-size: 14px;}
+    .agendar-consulta {display: none;}
+    .logo {left: 0; transform: translateY(-50%);}
+    .logodourada {left: 0; transform: translateY(-50%);}
+    .logo img, .logodourada img {
+        width: 150px;
+    }
+    .hero-text-container {
+        width: 36%;
+        right: 30px;
+    }
+    .hero-text-container h1 {
+        font-size: 1.4em;
+    }
+    .hero-text-container p {
+        font-size: 0.8em;
+    }
+    .hero-btn {
+        padding: 8px 16px;
+        border: 1px solid rgb(40, 40, 40);
+        font-size: 0.8em;
+    }
+    .hero-content h1 {
+        font-size: 1.4em;
+    }
+    .ver-video-box {
+        width: 140px;
+        height: 40px;
+        border-radius: 20px;
+        margin: 30px auto;
+    }
+    .ver-video-box span {
+        margin-left: 15px;
+        font-size: 13px;
+    }
+    .play-box {
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+    }
+    .play-box svg {
+        height: 15px;
+        margin-left: 5px;
+    }
+    .section-title {font-size: 25px;}
+    .margin-big {
+        margin-bottom: 80px;
+    }
+    .equipe .texto {
+        max-width: 300px;
+        margin: 0 auto !important;
+    }
+    .whatsapp {
+        right: 20px;
+        bottom: 20px;
+    }
+    .whatsapp-button {
+        width: 45px;
+        height: 45px;
+    }
+    .whatsapp-button img {
+        height: 45px;
+    }
+}
+
+@media (max-width: 500px) {
+    .slide .overlay-img {
+        transform: translateX(200px);
+    }
+    .hero-text-container {
+        top: 52%;
+        right: 20px;
+        min-width: 220px;
+    }
+    .hero-text-container h1 {
+        font-size: 1.3em;
+    }
+    .hero-text-container p {
+        font-size: 0.7em;
+    }
+    @keyframes scaleLoop {
+
+        0%,
+        100% {
+            transform: translateY(-30px) scale(1);
+        }
+    
+        80% {
+            transform: translateY(-30px) scale(1.15);
+        }
+    }
+    .ver-mais {
+        right: 40px;
+        bottom: -20px;
+    }
+    .equipe .col-md-7 .container .row {
+        transform: scale(0.78);
+    }
+    .nav-btn-galeria-left {left: 15px;}
+    .nav-btn-galeria-right {right: 15px;}
+    .localizacao-img h4 {
+        font-size: 1.2em;
+    }
+    .equipe .texto h1 {
+        font-size: 2.1em;
+    }
+    .foto-fixa img {
+        height: 70vh;
+    }
+    .espaço {
+        height: 450px;
+    }
+}
+
+@media (max-width: 400px) {
+    .hero-text-container {
+        right: 10px;
+    }
+    .hero-content h1 {
+        font-size: 1.3em;
+    }
+    @keyframes scaleLoop {
+
+        0%,
+        100% {
+            transform: translate(20px,-30px) scale(1);
+        }
+    
+        80% {
+            transform: translate(20px,-30px) scale(1.15);
+        }
+    }
+    .equipe .texto h1 {
+        font-size: 1.9em;
+    }
 }

@@ -37,12 +37,16 @@ $_SESSION["page"] = "clinica";
 
         <section id="clinica" class="container mt-5">
             <div class="row">
-                <div class="col-md-6 mosaico">
+                <div class="col-md-6 mosaico mosaico1 fade-in-element">
                     <!-- Espaço para a imagem -->
                     <img src="./img/mosaico.png" alt="Imagem da Clínica Palazzo" class="img-fluid">
                 </div>
-                <div class="col-md-6" style="margin-right:0; padding:0;">
+                <div class="col-md-6 info" style="margin-right:0; padding:0;">
                     <h1 class="titulo titulo-clinica fade-in-element">A clínica Palazzo</h1>
+                    <div class="mosaico mosaico2 fade-in-element">
+                        <!-- Espaço para a imagem -->
+                        <img src="./img/mosaico.png" alt="Imagem da Clínica Palazzo" class="img-fluid">
+                    </div>
                     <p class="texto-clinica fade-in-element">
                         Recupere seu sorriso completo e a autoconfiança com nossos implantes dentários de alta
                         tecnologia. Transforme sua vida restaurando a estabilidade e a beleza natural dos seus
@@ -55,10 +59,9 @@ $_SESSION["page"] = "clinica";
                         tecnologia.<br><br>
                     </p>
                     <!-- Botões lado a lado -->
-                    <div class="d-flex">
+                    <div class="d-flex fade-in-element">
                         <a href="index.php#contato"><button type="button" class="btn-2" id="agendar">Agendar consulta</button></a>
                         <a href="tratamentos.php"><button type="button" class="btn-2">Serviços</button></a>
-                        <a href="equipe.php"><button type="button" class="btn-2">Equipe</button></a>
                     </div>
                 </div>
             </div>

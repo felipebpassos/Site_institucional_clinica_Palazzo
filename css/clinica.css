@@ -15,6 +15,12 @@ section {
     padding-right: 50px;
 }
 
+.mosaico2 {
+    display: none;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
 .titulo {
     font-family: "Open Sans", sans-serif;
     color: rgb(80, 80, 80);
@@ -117,4 +123,74 @@ p {
 
 .img-card:hover img {
     transform: scale(1.05);
+}
+
+@media (max-width: 950px) {
+    main {
+        margin: 0 40px;
+    }
+
+    section {padding-top: 100px;}
+
+    .mosaico img {
+        padding: 0;
+        display: block;
+        margin: auto;
+        margin-bottom: 60px;
+    }
+
+    .mosaico1 {
+        display: none;
+    }
+
+    .mosaico2 {
+        display: block;
+    }
+
+    .info {
+        width: 100%;
+        max-width: 100% !important;
+        flex: none !important;
+    }
+
+    .titulo-clinica {
+        width: fit-content;
+        margin: auto;
+        margin-bottom: 80px;
+        display: block;
+    }
+
+    .titulo-clinica:after {
+        content: '';
+        position: absolute;
+        bottom: -15px;
+        left: calc(50% - 30px);
+        /* Posiciona o traço no centro inicialmente */
+        width: 60px;
+        /* Define a largura inicial como metade do traço */
+        height: 4px;
+        background-color: rgb(138, 123, 112);
+        transform-origin: center;
+        /* Define o ponto de origem da transformação */
+        transform: scaleX(0);
+        /* Inicia o traço com largura zero */
+        transition: transform 2.5s ease;
+        /* Adiciona uma transição suave na transformação */
+    }
+    
+    .titulo-clinica.fade-in::after {
+        transform: scaleX(1);
+        /* Aumenta a largura para o tamanho completo do traço */
+    }
+
+    .d-flex {width: fit-content; margin: auto; margin-top: 70px;}
+}
+
+@media (max-width: 500px) {
+    .titulo-clinica {
+        position: relative;
+        display: inline-block;
+        font-size: 38px;
+    }
+    #ambientes p {font-size: 14px;}
 }
