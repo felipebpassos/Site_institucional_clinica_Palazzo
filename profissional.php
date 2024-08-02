@@ -47,8 +47,71 @@ $profissionais = [
         'link_facebook' => 'https://www.facebook.com/ingrid/',
         'link_linkedin' => 'https://www.linkedin.com/in/ingrid/'
     ],
-    'Renata' => [
-        'nome' => 'Dra. Renata Andrade',
+    'Renatha' => [
+        'nome' => 'Dra. Renatha Andrade',
+        'especialidade' => 'Ortodontista',
+        'registro' => 'Registro CRO: 22245',
+        'descricao' => "Dra. Renata Andrade é uma renomada ortodontista com mais de 15 anos de experiência, graduada pela Universidade de São Paulo...",
+        'citacao' => "A ortodontia não é apenas sobre dentes, é sobre mudar vidas através de melhorias na autoestima.",
+        'imagem' => './img/renata.jpg',
+        'formacao' => [
+            "Graduada em Odontologia pela USP",
+            "Especialista em Ortodontia pela USP",
+            "Doutorado em Ciências Odontológicas pela USP"
+        ],
+        'especialidades' => [
+            "Especialista em Ortodontia",
+            "Tratamento de Disfunções Temporomandibulares",
+            "Terapia com Laser de baixa intensidade"
+        ],
+        'link_instagram' => 'https://www.instagram.com/renata/',
+        'link_facebook' => 'https://www.facebook.com/renata/',
+        'link_linkedin' => 'https://www.linkedin.com/in/renata/'
+    ],
+    'Paula' => [
+        'nome' => 'Dra. Renatha Andrade',
+        'especialidade' => 'Ortodontista',
+        'registro' => 'Registro CRO: 22245',
+        'descricao' => "Dra. Renata Andrade é uma renomada ortodontista com mais de 15 anos de experiência, graduada pela Universidade de São Paulo...",
+        'citacao' => "A ortodontia não é apenas sobre dentes, é sobre mudar vidas através de melhorias na autoestima.",
+        'imagem' => './img/renata.jpg',
+        'formacao' => [
+            "Graduada em Odontologia pela USP",
+            "Especialista em Ortodontia pela USP",
+            "Doutorado em Ciências Odontológicas pela USP"
+        ],
+        'especialidades' => [
+            "Especialista em Ortodontia",
+            "Tratamento de Disfunções Temporomandibulares",
+            "Terapia com Laser de baixa intensidade"
+        ],
+        'link_instagram' => 'https://www.instagram.com/renata/',
+        'link_facebook' => 'https://www.facebook.com/renata/',
+        'link_linkedin' => 'https://www.linkedin.com/in/renata/'
+    ],
+    'Amara' => [
+        'nome' => 'Dra. Renatha Andrade',
+        'especialidade' => 'Ortodontista',
+        'registro' => 'Registro CRO: 22245',
+        'descricao' => "Dra. Renata Andrade é uma renomada ortodontista com mais de 15 anos de experiência, graduada pela Universidade de São Paulo...",
+        'citacao' => "A ortodontia não é apenas sobre dentes, é sobre mudar vidas através de melhorias na autoestima.",
+        'imagem' => './img/renata.jpg',
+        'formacao' => [
+            "Graduada em Odontologia pela USP",
+            "Especialista em Ortodontia pela USP",
+            "Doutorado em Ciências Odontológicas pela USP"
+        ],
+        'especialidades' => [
+            "Especialista em Ortodontia",
+            "Tratamento de Disfunções Temporomandibulares",
+            "Terapia com Laser de baixa intensidade"
+        ],
+        'link_instagram' => 'https://www.instagram.com/renata/',
+        'link_facebook' => 'https://www.facebook.com/renata/',
+        'link_linkedin' => 'https://www.linkedin.com/in/renata/'
+    ],
+    'Ellen' => [
+        'nome' => 'Dra. Renatha Andrade',
         'especialidade' => 'Ortodontista',
         'registro' => 'Registro CRO: 22245',
         'descricao' => "Dra. Renata Andrade é uma renomada ortodontista com mais de 15 anos de experiência, graduada pela Universidade de São Paulo...",
@@ -71,7 +134,14 @@ $profissionais = [
 ];
 
 // Pegando o nome do profissional da URL
-$profissional_nome = $_GET['nome'] ?? 'Winicius'; // Default para 'Winicius' se nenhum nome for passado
+$profissional_nome = $_GET['nome'];
+
+// Verificando se a chave do profissional existe no array
+if (!array_key_exists($profissional_nome, $profissionais)) {
+    header("Location: erro.php");
+    exit();
+}
+
 $profissional = $profissionais[$profissional_nome];
 
 ?>
@@ -163,10 +233,24 @@ $profissional = $profissionais[$profissional_nome];
     <!-- Div de sobreposição -->
     <div id="overlay" class="overlay"></div>
 
+    <div class="message-box">
+        <span class="texto">Fale conosco<span class="close">x</span></span>
+    </div>
+
+    <div class="whatsapp-box">
+        <a href="https://api.whatsapp.com/send?phone=5579991769191&text=Ol%C3%A1!%20Vim%20atrav%C3%A9s%20do%20site%20e%20gostaria%20de%20agendar%20uma%20consulta%20%" class="whatsapp-button" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span>Contato</span>
+        </a>
+    </div>
+
     <?php include 'footer.php'; ?>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     <script src="./js/toggle-menu.js"></script>
     <script src="./js/header-effect2.js"></script>
+    <script src="./js/message-button.js"></script>
 
 </body>
 

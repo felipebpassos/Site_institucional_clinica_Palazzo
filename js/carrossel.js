@@ -4,6 +4,16 @@ document.addEventListener("DOMContentLoaded", function () {
     var scrollWidth = quadros[0].offsetWidth;
     var currentIndex = 0;
 
+    // Função para obter a margem esquerda e direita combinadas
+    function getMargin(element) {
+        var style = window.getComputedStyle(element);
+        var marginLeft = parseInt(style.marginLeft);
+        var marginRight = parseInt(style.marginRight);
+        return marginLeft + marginRight;
+    }
+
+    var margin = getMargin(quadros[0]);
+
     var leftArrow = document.querySelector('.nav-btn-galeria-left');
     var rightArrow = document.querySelector('.nav-btn-galeria-right');
 
@@ -28,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
     leftArrow.addEventListener('click', function () {
         if (currentIndex > 0) {
             currentIndex--;
-            row.style.transform = `translateX(${-currentIndex * scrollWidth}px)`;
+            row.style.transform = `translateX(${-currentIndex * (scrollWidth + margin)}px)`;
             updateArrows();
         }
     });
@@ -36,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
     rightArrow.addEventListener('click', function () {
         if (currentIndex < quadros.length - 1) {
             currentIndex++;
-            row.style.transform = `translateX(${-currentIndex * scrollWidth}px)`;
+            row.style.transform = `translateX(${-currentIndex * (scrollWidth + margin)}px)`;
             updateArrows();
         }
     });

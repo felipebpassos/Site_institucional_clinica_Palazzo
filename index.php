@@ -73,26 +73,12 @@ $_SESSION["page"] = "home";
                     <div class="slide">
                         <div class="slide-relative">
                             <img class="overlay-img" src="./img/overlay.png" alt="Overlay-Hero">
-                            <!--
-                        <video autoplay loop="loop">
-                            <source src="https://video-previews.elements.envatousercontent.com/053f9896-8270-465a-a615-cea94a62fb45/watermarked_preview/watermarked_preview.mp4" type="video/mp4">
-                            <span>This video is currently unavailable</span>
-                        </video>
-                        <script>
-                            document.addEventListener("DOMContentLoaded", function() {
-                                var videoPlayer = document.getElementById('video-main');
-
-                                // Reproduzir o vídeo automaticamente quando a página é carregada
-                                videoPlayer.play();
-                            });
-                        </script>
-                        -->
                             <div class="hero-text-container">
                                 <h1>Onde a beleza<br>encontra a precisão</h1>
-                                <p>Conheça nossa abordagem personalizada para sua saúde e bem-estar.</p>
+                                <p>Profissionais experientes e tecnologia de ponta para transformar seu sorriso e sua saúde.</p>
                                 <div class="buttons-container">
-                                    <a href="clinica.php"><button class="hero-btn">A clínica</button></a>
-                                    <a href="tratamentos.php"><button class="hero-btn">Serviços</button></a>
+                                    <a href="clinica.php"><button class="blur-btn">A clínica</button></a>
+                                    <a href="tratamentos.php"><button class="blur-btn">Tratamentos</button></a>
                                 </div>
                             </div>
                             <img class="slides slide-img" id="winicius-hero" src="./img/drwinicius.jpg" alt="Consultório Clínica Palazzo | Winícius Aragão">
@@ -101,7 +87,7 @@ $_SESSION["page"] = "home";
                     <div class="slide">
                         <div class="slide-relative">
                             <picture class="slides">
-                            <source srcset="./img/thumbnail-main.png" media="(min-width: 768px)">
+                                <source srcset="./img/thumbnail-main.png" media="(min-width: 768px)">
                                 <source srcset="./img/thumbnail-main-portrait.png" media="(min-width: 500px)">
                                 <img src="./img/thumbnail-main-portrait-min.png" alt="Entrevista Winícius Aragão - Clínica Palazzo">
                             </picture>
@@ -134,84 +120,81 @@ $_SESSION["page"] = "home";
         <!-- Sessão Tratamentos -->
         <section class="tratamentos">
 
-            <!--
-            <div class="arrow" id="preview" onclick="plusSlides(-1)">
-                <svg width="12" height="24" viewBox="0 0 8 16" fill="rgb(223, 214, 207)">
-                    <path d="M.732 9.547L8 16 4 8l4-8L.732 6.453A1.996 1.996 0 0 0 0 8c0 .623.285 1.18.732 1.547z">
-                    </path>
-                </svg>
-            </div>
-            <div class="arrow" id="next" onclick="plusSlides(1)">
-                <svg width="12" height="24" viewBox="0 0 8 16" fill="rgb(223, 214, 207)">
-                    <path d="M7.268 9.547L0 16l4-8-4-8 7.268 6.453C7.715 6.82 8 7.377 8 8c0 .623-.285 1.18-.732 1.547z">
-                    </path>
-                </svg>
-            </div>
-            -->
-
-            <h2 class="section-title fade-in-slide-up margin-big">NOSSAS ESPECIALIDADES</h2>
+            <h2 class="section-title fade-in-slide-up margin-big">NOSSAS ESPECIALIDADES<div class="ver-todos">
+                    <a href="tratamentos.php">Ver todas</a>
+                </div>
+            </h2>
 
             <div class="container" style="position: relative;">
 
                 <div class="row">
                     <div class="col-md-6 mt-4">
-                        <div class="tratamento fade-in-slide-up">
-                            <img class="icone" src="./img/reabilitacao.png" alt="Impante Dentário">
-                            <div class="titulo">
-                                <h2>Implantes</h2>
+                        <a href="" class="fade-in-slide-up">
+                            <div class="tratamento">
+                                <div class="content">
+                                    <img class="icone" src="./img/reabilitacao.png" alt="Impante Dentário">
+                                    <div class="titulo">
+                                        <h2>Implantes</h2>
+                                    </div>
+                                    <p class="descricao fade-in-slide-up">
+                                        Reabilitação oral com implantes, dentaduras fixas, implantes unitários, enxertos, reabilitação em áreas estéticas.
+                                    </p>
+                                </div>
                             </div>
-                            <p class="descricao fade-in-slide-up">
-                                Recupere seu sorriso completo e a autoconfiança com nossos implantes dentários de alta
-                                tecnologia. Transforme sua vida restaurando a estabilidade e a beleza natural dos seus
-                                dentes.
-                            </p>
-                        </div>
+                        </a>
                     </div>
                     <div class="col-md-6 mt-4">
-                        <div class="tratamento fade-in-slide-up">
-                            <img class="icone" src="./img/clareamento.png" alt="Clareamento Dentário">
-                            <div class="titulo">
-                                <h2>Clareamento</h2>
+                        <a href="" class="fade-in-slide-up">
+                            <div class="tratamento">
+                                <div class="content">
+                                    <img class="icone" src="./img/clareamento.png" alt="Clareamento Dentário">
+                                    <div class="titulo">
+                                        <h2>Clareamento</h2>
+                                    </div>
+                                    <p class="descricao fade-in-slide-up">Desperte o brilho em seu sorriso! Nosso tratamento
+                                        oferece resultados
+                                        visíveis, devolvendo a luminosidade aos seus dentes.</p>
+                                </div>
                             </div>
-                            <p class="descricao fade-in-slide-up">Desperte o brilho em seu sorriso! Nosso tratamento
-                                oferece resultados
-                                visíveis, devolvendo a luminosidade aos seus dentes. Sorria com confiança e destaque-se
-                                com um sorriso mais radiante.</p>
-                        </div>
+                        </a>
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="col-md-6 mt-4">
-                        <div class="tratamento fade-in-slide-up">
-                            <img class="icone" src="./img/orto.png" alt="Ortodontia">
-                            <div class="titulo">
-                                <h2>Ortodontia</h2>
+                        <a href="" class="fade-in-slide-up">
+                            <div class="tratamento">
+                                <div class="content">
+                                    <img class="icone" src="./img/orto.png" alt="Ortodontia">
+                                    <div class="titulo">
+                                        <h2>Ortodontia</h2>
+                                    </div>
+                                    <p class="descricao fade-in-slide-up">
+                                        Correção de desalinhamentos e problemas de mordida, visando melhorar a sua saúde bucal e a estética do seu sorriso.
+                                    </p>
+                                </div>
                             </div>
-                            <p class="descricao fade-in-slide-up">
-                                Recupere seu sorriso completo e a autoconfiança com nossos implantes dentários de alta
-                                tecnologia. Transforme sua vida restaurando a estabilidade e a beleza natural dos seus
-                                dentes.
-                            </p>
-                        </div>
+                        </a>
                     </div>
                     <div class="col-md-6 mt-4">
-                        <div class="tratamento fade-in-slide-up">
-                            <img class="icone" src="./img/endo.png" alt="Endodontia">
-                            <div class="titulo">
-                                <h2>Endodontia</h2>
+                        <a href="" class="fade-in-slide-up">
+                            <div class="tratamento">
+                                <div class="content">
+                                    <img class="icone" src="./img/endo.png" alt="Endodontia">
+                                    <div class="titulo">
+                                        <h2>Endodontia</h2>
+                                    </div>
+                                    <p class="descricao fade-in-slide-up">Tratamento de canal com instrumentação rotatória em sessão única.</p>
+                                </div>
                             </div>
-                            <p class="descricao fade-in-slide-up">Desperte o brilho em seu sorriso! Nosso tratamento
-                                oferece resultados
-                                visíveis, devolvendo a luminosidade aos seus dentes. Sorria com confiança e destaque-se
-                                com um sorriso mais radiante.</p>
-                        </div>
+                        </a>
                     </div>
                 </div>
 
-                <div class="ver-mais">
-                    <a href="tratamentos.php">Ver mais</a>
-                </div>
+                <a href="https://api.whatsapp.com/send?phone=5579991769191&text=Ol%C3%A1!%20Vim%20atrav%C3%A9s%20do%20site%20e%20gostaria%20de%20agendar%20uma%20consulta%20%" target="_blank" class=" cta fade-in-slide-up"><button class="outer">
+                        <div class="inner"><i class="fa-brands fa-whatsapp" style="margin-right: 10px;"></i><span>AGENDE UMA CONSULTA!</span></div>
+                    </button></a>
+
             </div>
 
         </section>
@@ -297,13 +280,44 @@ $_SESSION["page"] = "home";
             </div>
         </section>
 
-        <div class="foto-fixa">
-            <img src="./img/consultorio2.jpg" alt="Fachada">
-        </div>
-
-        <div class="overlay-background"></div>
-
-        <div class="espaço"></div>
+        <section class="vantagens">
+            <h2 class="section-title fade-in-slide-up margin-medium">Por que escolher a Clínica Palazzo?</h2>
+            <div class="container">
+                <div class="row fade-in-slide-up">
+                    <div class="col-md-3 mt-4">
+                        <div class="vantagem">
+                            <img src="./img/especializada.png" alt="Equipe Especializada">
+                            <h5>Equipe Especializada</h5>
+                            <p>Profissionais altamente qualificados e experientes, comprometidos com sua satisfação.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mt-4">
+                        <div class="vantagem">
+                            <img src="./img/tec.png" alt="Tecnologia de Ponta">
+                            <h5>Tecnologia de Ponta</h5>
+                            <p>Equipamentos modernos e técnicas avançadas para garantir os melhores resultados.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mt-4">
+                        <div class="vantagem">
+                            <img src="./img/personalizado.png" alt="Atendimento Personalizado">
+                            <h5>Atendimento Personalizado</h5>
+                            <p>Tratamentos sob medida para atender suas necessidades e desejo individuais, superando suas expectativas.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mt-4">
+                        <div class="vantagem">
+                            <img src="./img/acolhedor.png" alt="Ambiente Acolhedor">
+                            <h5>Ambiente Acolhedor</h5>
+                            <p>Instalações confortáveis para que você se sinta à vontade durante todo o processo.</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="https://api.whatsapp.com/send?phone=5579991769191&text=Ol%C3%A1!%20Vim%20atrav%C3%A9s%20do%20site%20e%20gostaria%20de%20agendar%20uma%20consulta%20%" target="_blank" class=" cta fade-in-slide-up"><button class="outer">
+                        <div class="inner"><i class="fa-brands fa-whatsapp" style="margin-right: 10px;"></i><span>AGENDE UMA CONSULTA!</span></div>
+                    </button></a>
+            </div>
+        </section>
 
         <!-- Sessão Fale Conosco -->
         <section class="fale-conosco" id="contato">
@@ -368,23 +382,26 @@ $_SESSION["page"] = "home";
     <!-- Div de sobreposição -->
     <div id="overlay" class="overlay"></div>
 
-    <div class="whatsapp">
-        <div class="tooltip-container">
-            <a href="https://api.whatsapp.com/send?phone=5579991769191" class="whatsapp-button" target="_blank">
-                <img src="./img/whatsapp.png" alt="Ícone do WhatsApp">
-            </a>
-            <span class="tooltip">Entre em contato conosco!</span>
-        </div>
+    <div class="message-box">
+        <span class="texto">Fale conosco<span class="close">x</span></span>
+    </div>
+
+    <div class="whatsapp-box">
+        <a href="https://api.whatsapp.com/send?phone=5579991769191&text=Ol%C3%A1!%20Vim%20atrav%C3%A9s%20do%20site%20e%20gostaria%20de%20agendar%20uma%20consulta%20%" class="whatsapp-button" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span>Contato</span>
+        </a>
     </div>
 
     <?php include 'footer.php' ?>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
+    <script src="./js/loading.js"></script>
     <script src="./js/header-effect.js"></script>
     <script src="./js/header-effect2.js"></script>
-    <script src="./js/loading.js"></script>
-    <script src="./js/words-effect.js"></script>
+    <script src="./js/message-button.js"></script>
+    <script src="./js/hover-invert.js"></script>
     <script src="./js/video-player.js"></script>
     <script src="./js/slide.js"></script>
     <script src="./js/carrossel.js"></script>

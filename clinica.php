@@ -48,19 +48,18 @@ $_SESSION["page"] = "clinica";
                         <img src="./img/mosaico.png" alt="Imagem da Clínica Palazzo" class="img-fluid">
                     </div>
                     <p class="texto-clinica fade-in-element">
-                        Recupere seu sorriso completo e a autoconfiança com nossos implantes dentários de alta
-                        tecnologia. Transforme sua vida restaurando a estabilidade e a beleza natural dos seus
-                        dentes. Recupere seu sorriso completo e a autoconfiança com nossos implantes dentários de alta
-                        tecnologia. Recupere seu sorriso completo e a autoconfiança com nossos implantes dentários de alta
-                        tecnologia.<br><br>
-                        Recupere seu sorriso completo e a autoconfiança com nossos implantes dentários de alta
-                        tecnologia. Transforme sua vida restaurando a estabilidade e a beleza natural dos seus
-                        dentes. Recupere seu sorriso completo e a autoconfiança com nossos implantes dentários de alta
-                        tecnologia.<br><br>
+                        Localizada no bairro Jardins em Aracaju, nossa clínica de alto padrão
+                        oferece um ambiente moderno e aconchegante, projetado para proporcionar conforto e tranquilidade a todos os nossos
+                        pacientes. Desde o momento em que você entra, será recebido por nossa equipe de atendimento e recepção acolhedoras,
+                        sempre prontas para garantir que sua experiência conosco seja excepcional.<br><br>
+                        Equipados com aparelhos e tecnologias de ponta, estamos comprometidos em oferecer tratamentos de alta qualidade e
+                        precisão. Nossa abordagem de atendimento humanizado garante que cada paciente receba cuidado personalizado e
+                        atencioso, respeitando suas necessidades individuais. Venha nos visitar e descubra como podemos ajudar a transformar
+                        sua saúde e bem-estar com nossos serviços especializados.<br><br>
                     </p>
                     <!-- Botões lado a lado -->
                     <div class="d-flex fade-in-element">
-                        <a href="index.php#contato"><button type="button" class="btn-2" id="agendar">Agendar consulta</button></a>
+                        <a href="https://api.whatsapp.com/send?phone=5579991769191&text=Ol%C3%A1!%20Vim%20atrav%C3%A9s%20do%20site%20e%20gostaria%20de%20agendar%20uma%20consulta%20%" target="_blank"><button type="button" class="btn-2" id="agendar">Agendar consulta</button></a>
                         <a href="tratamentos.php"><button type="button" class="btn-2">Serviços</button></a>
                     </div>
                 </div>
@@ -69,7 +68,7 @@ $_SESSION["page"] = "clinica";
 
         <section id="ambientes" class="container mt-5">
             <h1 class="titulo text-center titulo-espaco fade-in-element">Nosso espaço</h1>
-            <p class="text-center fade-in-element" style="margin: auto; margin-bottom: 100px;">Um breve texto explicativo sobre os diferentes ambientes disponíveis na clínica, destacando as características especiais e conforto.</p>
+            <p class="text-center fade-in-element" style="margin: auto; margin-bottom: 100px;">Nossos ambientes cuidadosamente planejados incluem salas de espera espaçosas e confortáveis, consultórios modernos equipados com as mais recentes tecnologias.</p>
             <!-- Galeria de fotos -->
             <div class="row fade-in-element">
                 <div class="img-card">
@@ -110,12 +109,33 @@ $_SESSION["page"] = "clinica";
     <!-- Div de sobreposição -->
     <div id="overlay" class="overlay"></div>
 
+    <!-- Overlay e imagem maximizada -->
+    <div id="img-overlay" class="img-overlay">
+        <img id="max-img" class="max-img" src="" alt="Imagem maximizada">
+        <button id="close-btn" class="close-btn">&times;</button>
+    </div>
+
+    <div class="message-box">
+        <span class="texto">Fale conosco<span class="close">x</span></span>
+    </div>
+
+    <div class="whatsapp-box">
+        <a href="https://api.whatsapp.com/send?phone=5579991769191&text=Ol%C3%A1!%20Vim%20atrav%C3%A9s%20do%20site%20e%20gostaria%20de%20agendar%20uma%20consulta%20%" class="whatsapp-button" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span>Contato</span>
+        </a>
+    </div>
+
     <?php include 'footer.php' ?>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     <script src="./js/toggle-menu.js"></script>
     <script src="./js/header-effect2.js"></script>
+    <script src="./js/message-button.js"></script>
     <script src="./js/fade-in-element.js"></script>
     <script src="./js/proporcao.js"></script>
+    <script src="./js/max-img.js"></script>
 
 </body>
 

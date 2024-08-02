@@ -13,14 +13,14 @@ section {
 
 .titulo-equipe {position: relative; margin-bottom: 40px;}
 
-p {
+section p {
     color: rgb(100, 100, 100);
     font-size: 18px;
     line-height: 1.8em;
     max-width: 700px;
 }
 
-.col-md-4 {
+.profissionais .col-md-4 {
     min-width: 360px;
     max-width: 390px;
     margin: auto;
@@ -33,6 +33,10 @@ p {
     overflow: hidden;
     transition: all 0.8s ease;
     margin-bottom: 40px;
+}
+
+.card p {
+    line-height: 1.2em;
 }
 
 .card img {
@@ -102,6 +106,7 @@ p {
 .dados-pessoais {
     padding-left: 20px;
     padding-right: 30px;
+    margin-bottom: 60px;
 }
 
 .imagemPro {

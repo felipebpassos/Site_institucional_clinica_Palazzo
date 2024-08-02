@@ -1,9 +1,6 @@
-<?php 
-
+<?php
 session_start();
-
-$_SESSION["page"] = "equipe";
-
+$_SESSION["page"] = "erro";
 ?>
 
 <!DOCTYPE html>
@@ -12,35 +9,29 @@ $_SESSION["page"] = "equipe";
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="Clínica Palazzo |">
+    <meta property="og:title" content="Erro 404 | Clínica Palazzo">
     <meta property="og:description" content="[DESCRIÇÃO DA CLÍNICA]">
     <meta property="og:image" content="URL_DA_IMAGEM_PARA_COMPARTILHAMENTO">
     <meta property="og:url" content="URL">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Clínica Palazzo">
-    <title>Clínica Palazzo</title>
+    <title>Erro 404 | Clínica Palazzo</title>
     <link rel="icon" href="./img/ico.ico">
 
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
-
-    <link rel="stylesheet" href="./phone-number-validation/build/css/intlTelInput.css">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
 
-    <?php include 'header.php' ?>
-
     <main>
-
+        <div class="container text-center mt-5">
+            <h1>Erro 404 - Página não encontrada</h1>
+            <p class="mt-4">Desculpe, a página que você está procurando não existe ou ocorreu um erro inesperado.</p>
+            <a href="index.php" class="btn-primary mt-3">Voltar para a página inicial</a>
+        </div>
     </main>
-
-    <!-- Div de sobreposição -->
-    <div id="overlay" class="overlay"></div>
-
-    <footer></footer>
-
-    <script src="./js/toggle-menu.js"></script>
 
 </body>
 

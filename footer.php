@@ -14,7 +14,7 @@
 
                 <div class="redes">
                     <a href="https://www.instagram.com/palazzoclinica/"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://www.instagram.com/palazzoclinica/"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://api.whatsapp.com/send?phone=5579991769191&text=Ol%C3%A1!%20Vim%20atrav%C3%A9s%20do%20site%20e%20gostaria%20de%20agendar%20uma%20consulta%20%"><i class="fa-brands fa-whatsapp"></i></a>
                 </div>
 
 
@@ -82,8 +82,7 @@
             <hr style="position:absolute; bottom:0; background-color:rgba(223, 214, 207, 0.2); width:100%;">
         </div>
         <div class="copyright" style="text-align:center;">
-            &copy; 2023, Todos os direitos reservados | Desenvolvido por <a href="https://www.instagram.com/simplifyweb/"
-                target="_blank">Simplify Web</a>
+            &copy; 2023, Todos os direitos reservados | Desenvolvido por <a href="https://www.instagram.com/simplifyweb/" target="_blank">Simplify Web</a>
         </div>
     </div>
 </footer>

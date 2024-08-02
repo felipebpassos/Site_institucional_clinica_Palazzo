@@ -1,5 +1,5 @@
 <header id="page-header" <?php if ($_SESSION["page"] === "home")
-                echo 'class="transparente"'; ?>>
+                                echo 'class="transparente"'; ?>>
 
     <div class="header-container">
 
@@ -11,7 +11,7 @@
             <span>MENU</span>
         </button>
 
-        <a href="index.php#contato" class="agendar-consulta">Agendar consulta</a>
+        <a href="https://api.whatsapp.com/send?phone=5579991769191&text=Ol%C3%A1!%20Vim%20atrav%C3%A9s%20do%20site%20e%20gostaria%20de%20agendar%20uma%20consulta%20%" target="_blank" class="agendar-consulta"><i class="fa-brands fa-whatsapp" style="margin-right: 10px;"></i>Agendar consulta</a>
 
     </div>
 
@@ -27,18 +27,19 @@
         <ul>
 
             <li><a href="index.php" <?php if ($_SESSION["page"] === "home")
-                echo 'class="active"'; ?>>Início</a></li>
+                                        echo 'class="active"'; ?>>Início</a></li>
             <li><a href="clinica.php" <?php if ($_SESSION["page"] === "clinica")
-                echo 'class="active"'; ?>>Clínica</a>
+                                            echo 'class="active"'; ?>>Clínica</a>
             </li>
             <li><a href="tratamentos.php" <?php if ($_SESSION["page"] === "tratamentos")
-                echo 'class="active"'; ?>>Tratamentos</a></li>
+                                                echo 'class="active"'; ?>>Tratamentos</a></li>
             <li><a href="equipe.php" <?php if ($_SESSION["page"] === "equipe")
-                echo 'class="active"'; ?>>Equipe</a></li>
-            <li><a href="index.php#contato">Agendar consulta</a></li>
+                                            echo 'class="active"'; ?>>Equipe</a></li>
+            <li><a href="https://api.whatsapp.com/send?phone=5579991769191&text=Ol%C3%A1!%20Vim%20atrav%C3%A9s%20do%20site%20e%20gostaria%20de%20agendar%20uma%20consulta%20%" target="_blank">Agendar consulta</a></li>
             <!--
             <li><a href="tecnologias.php" <?php // if ($_SESSION["page"] === "tecnologias")
-                // echo 'class="active"'; ?>>Tecnologias</a></li> -->
+                                            // echo 'class="active"'; 
+                                            ?>>Tecnologias</a></li> -->
 
         </ul>
 
