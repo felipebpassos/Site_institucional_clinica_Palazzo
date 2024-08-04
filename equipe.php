@@ -12,12 +12,21 @@ $_SESSION["page"] = "equipe";
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="Clínica Palazzo |">
-    <meta property="og:description" content="[DESCRIÇÃO DA CLÍNICA]">
-    <meta property="og:image" content="URL_DA_IMAGEM_PARA_COMPARTILHAMENTO">
-    <meta property="og:url" content="URL">
+    <meta name="description" content="Conheça nosso time de especialistas que 
+            te ajudarão a trazer de volta seu sorriso.">
+    <meta name="keywords" content="Clínica Palazzo, estética, odontologia, Aracaju, Sergipe, implantes dentários, clareamento dental, ortodontia, estética facial, estética corporal, nutrologia, reabilitação oral, endodontia, clínica de alto padrão, melhor dentista Aracaju, estética dental Aracaju, tratamentos estéticos Aracaju, clínica de estética Aracaju">
+    <meta name="author" content="Desenvolvido por Felipe Barreto Passos | Simplify Web">
+    <meta property="og:title" content="Equipe | Clínica Palazzo">
+    <meta property="og:description" content="Conheça nosso time de especialistas que 
+            te ajudarão a trazer de volta seu sorriso.">
+    <meta property="og:image" content="./img/ico2.png">
+    <meta property="og:url" content="https://www.clinicapalazzo.com.br/equipe.php">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Clínica Palazzo">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Equipe | Clínica Palazzo">
+    <meta name="twitter:description" content="Descubra os serviços de estética e odontologia da Clínica Palazzo em Aracaju, Sergipe. Oferecemos tratamentos de implantes dentários, clareamento dental, ortodontia e mais.">
+    <meta name="twitter:image" content="./img/ico2.png">
     <title>Equipe | Clínica Palazzo</title>
     <link rel="icon" href="./img/ico.ico">
 
@@ -37,8 +46,8 @@ $_SESSION["page"] = "equipe";
 
         <section class="profissionais container mt-5">
             <h1 class="titulo text-center titulo-equipe fade-in-element">Nossos especialistas</h1>
-            <p class="text-center fade-in-element" style="margin: auto; margin-bottom: 100px;">Conheça nosso time de especialistas e descubra como podemos 
-            ajudá-lo(a) a alcançar uma saúde excelente e bem-estar integral.</p>
+            <p class="text-center fade-in-element" style="margin: auto; margin-bottom: 100px;">Conheça nosso time de especialistas que 
+            te ajudarão a trazer de volta seu sorriso.</p>
             <div class="row fade-in-element">
                 <!-- Card do Profissional 1 -->
                 <div class="col-md-4">

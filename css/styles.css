@@ -824,7 +824,7 @@ header.hovered .logodourada {
 
 /* Aplique a animação ao passar o mouse */
 .tratamento:hover .icone {
-    animation: icon-jump 0.5s forwards; /* Animação de 0.5s com forwards para manter o estado final */
+    animation: icon-jump 0.8s forwards; /* Animação de 0.5s com forwards para manter o estado final */
 }
 
 .tratamento .titulo {
@@ -1162,6 +1162,11 @@ header.hovered .logodourada {
     z-index: 1;
 }
 
+.agende .buttons-container {
+    margin: auto;
+    width: fit-content;
+}
+
 .fale-conosco {
     padding: 200px 0;
     width: 100%;
@@ -1457,7 +1462,7 @@ footer .copyright {
     }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 768px) {
     header {
         height: 100px;
     }
@@ -1562,18 +1567,14 @@ footer .copyright {
         padding-right: 0px;
     }
 
-    .whatsapp {
+    .whatsapp-box {
         right: 20px;
         bottom: 20px;
     }
 
-    .whatsapp-button {
-        width: 45px;
-        height: 45px;
-    }
-
-    .whatsapp-button img {
-        height: 45px;
+    .message-box {
+        bottom: 125px;
+        right: 20px;
     }
 }
 
@@ -1639,6 +1640,14 @@ footer .copyright {
 
     .espaço {
         height: 450px;
+    }
+
+    .agende h1 {
+        font-size: 30px;
+    }
+
+    .agende h3 {
+        font-size: 18px;
     }
 }
 

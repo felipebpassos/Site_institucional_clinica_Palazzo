@@ -47,7 +47,7 @@
                                 <span>E-mail</span>
                             </strong>
                         </div>
-                        <p>secretaria@clinicapalazzo.com.br</p>
+                        <p>contato@clinicapalazzo.com.br</p>
                     </li>
                     <li>
                         <div style="display: flex; align-items: center; margin-bottom: 10px;">

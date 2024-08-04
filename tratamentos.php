@@ -12,12 +12,19 @@ $_SESSION["page"] = "tratamentos";
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="Clínica Palazzo |">
-    <meta property="og:description" content="[DESCRIÇÃO DA CLÍNICA]">
-    <meta property="og:image" content="URL_DA_IMAGEM_PARA_COMPARTILHAMENTO">
-    <meta property="og:url" content="URL">
+    <meta name="description" content="Clínica Palazzo - Excelência em estética e odontologia em Aracaju, Sergipe. Oferecemos serviços de implantes dentários, clareamento dental, ortodontia, estética facial e corporal, nutrologia, reabilitação oral e endodontia. Agende sua consulta!">
+    <meta name="keywords" content="Clínica Palazzo, estética, odontologia, Aracaju, Sergipe, implantes dentários, clareamento dental, ortodontia, estética facial, estética corporal, nutrologia, reabilitação oral, endodontia, clínica de alto padrão, melhor dentista Aracaju, estética dental Aracaju, tratamentos estéticos Aracaju, clínica de estética Aracaju">
+    <meta name="author" content="Desenvolvido por Felipe Barreto Passos | Simplify Web">
+    <meta property="og:title" content="Tratamentos | Clínica Palazzo">
+    <meta property="og:description" content="A Clínica Palazzo oferece serviços de estética e odontologia de alto padrão em Aracaju, Sergipe. Descubra nossos tratamentos de implantes dentários, clareamento, ortodontia e mais.">
+    <meta property="og:image" content="./img/ico2.png">
+    <meta property="og:url" content="https://www.clinicapalazzo.com.br/tratamentos.php">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Clínica Palazzo">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Tratamentos | Clínica Palazzo">
+    <meta name="twitter:description" content="Descubra os serviços de estética e odontologia da Clínica Palazzo em Aracaju, Sergipe. Oferecemos tratamentos de implantes dentários, clareamento dental, ortodontia e mais.">
+    <meta name="twitter:image" content="./img/ico2.png">
     <title>Tratamentos | Clínica Palazzo</title>
     <link rel="icon" href="./img/ico.ico">
 
@@ -45,9 +52,10 @@ $_SESSION["page"] = "tratamentos";
         <section class="transparente">
             <div class="container">
                 <div class="row">
-                    <div class="col-6 bloco">
+                    <div class="col-md-6 bloco">
                         <div>
                             <div class="texto fade-in-element">
+                                <h1 class="titulo-responsivo fade-in-element">Implantes</h1>
                                 <p>Com tecnologia de ponta, oferecemos implantes que se assemelham aos dentes naturais tanto na aparência quanto na funcionalidade, proporcionando uma melhor qualidade de vida e um sorriso mais confiante.</p>
                             </div>
                             <div class="buttons-container fade-in-element">
@@ -60,8 +68,8 @@ $_SESSION["page"] = "tratamentos";
                             </div>
                         </div>
                     </div>
-                    <div class="col-6 end">
-                        <h1 class="fade-in-element">Implantes</h1>
+                    <div class="col-md-6 end">
+                        <h1 class="titulo-normal fade-in-element">Implantes</h1>
                     </div>
                 </div>
             </div>
@@ -70,10 +78,10 @@ $_SESSION["page"] = "tratamentos";
         <section class="full">
             <div class="container">
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-md-6">
                         <h1 class="fade-in-element">Estética facial</h1>
                     </div>
-                    <div class="col-6 bloco">
+                    <div class="col-md-6 bloco">
                         <div>
                             <div class="texto fade-in-element">
                                 <p>Harmonizamos suas características de forma natural e satisfatória, destacando a sua beleza única. Com foco no paciente e atendimento personalizado, garantimos resultados que realçam o melhor de você.</p>
@@ -93,9 +101,10 @@ $_SESSION["page"] = "tratamentos";
         <section class="transparente">
             <div class="container">
                 <div class="row">
-                    <div class="col-6 bloco">
+                    <div class="col-md-6 bloco">
                         <div>
                             <div class="texto fade-in-element">
+                                <h1 class="titulo-responsivo fade-in-element">Clareamento</h1>
                                 <p>O caminho mais rápido e eficaz para um sorriso mais brilhante. Utilizando métodos seguros e comprovados, nossos tratamentos removem manchas e descolorações, resultando em dentes visivelmente mais brancos.</p>
                             </div>
                             <div class="buttons-container fade-in-element">
@@ -108,8 +117,8 @@ $_SESSION["page"] = "tratamentos";
                             </div>
                         </div>
                     </div>
-                    <div class="col-6 end">
-                        <h1 class="fade-in-element">Clareamento</h1>
+                    <div class="col-md-6 end">
+                        <h1 class="titulo-normal fade-in-element">Clareamento</h1>
                     </div>
                 </div>
             </div>
@@ -118,10 +127,10 @@ $_SESSION["page"] = "tratamentos";
         <section class="full">
             <div class="container">
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-md-6">
                         <h1 class="fade-in-element">Ortodontia</h1>
                     </div>
-                    <div class="col-6 bloco">
+                    <div class="col-md-6 bloco">
                         <div>
                             <div class="texto fade-in-element">
                                 <p>Nossos serviços de ortodontia vão além de apenas alinhar os dentes, eles visam melhorar a sua saúde bucal e a estética do seu sorriso. Utilizamos aparelhos modernos e técnicas avançadas para corrigir desalinhamentos e problemas de mordida, garantindo resultados duradouros e um sorriso mais harmonioso.</p>
@@ -141,9 +150,10 @@ $_SESSION["page"] = "tratamentos";
         <section class="transparente">
             <div class="container">
                 <div class="row">
-                    <div class="col-6 bloco">
+                    <div class="col-md-6 bloco">
                         <div>
                             <div class="texto fade-in-element">
+                                <h1 class="titulo-responsivo fade-in-element">Reabilitação Oral</h1>
                                 <p>Oferecemos uma variedade de tratamentos de reabilitação que envolvem desde a correção de problemas dentários como cáries e desgastes, até a reconstrução de estruturas dentárias danificadas, melhorando sua mastigação, fala, funcionalidade e a estética do seu sorriso.</p>
                             </div>
                             <div class="buttons-container fade-in-element">
@@ -156,8 +166,8 @@ $_SESSION["page"] = "tratamentos";
                             </div>
                         </div>
                     </div>
-                    <div class="col-6 end">
-                        <h1 class="fade-in-element">Reabilitação oral</h1>
+                    <div class="col-md-6 end">
+                        <h1 class="titulo-normal fade-in-element">Reabilitação oral</h1>
                     </div>
                 </div>
             </div>
@@ -166,10 +176,10 @@ $_SESSION["page"] = "tratamentos";
         <section class="full">
             <div class="container">
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-md-6">
                         <h1 class="fade-in-element">Nutrólogo</h1>
                     </div>
-                    <div class="col-6 bloco">
+                    <div class="col-md-6 bloco">
                         <div>
                             <div class="texto fade-in-element">
                                 <p>A saúde começa de dentro para fora, e nossos serviços de nutrologia são projetados para melhorar a sua qualidade de vida através de uma alimentação equilibrada e adequada às suas necessidades. Com acompanhamento personalizado, ajudamos você a alcançar um equilíbrio nutricional que reflete positivamente na sua saúde geral.</p>
@@ -189,9 +199,10 @@ $_SESSION["page"] = "tratamentos";
         <section class="transparente">
             <div class="container">
                 <div class="row">
-                    <div class="col-6 bloco">
+                    <div class="col-md-6 bloco">
                         <div>
                             <div class="texto fade-in-element">
+                                <h1 class="titulo-responsivo fade-in-element">Endodontia</h1>
                                 <p>A endodontia, ou tratamento de canal, é crucial para salvar dentes evitando que sejam extraídos. Com técnicas minimamente invasivas e eficientes, garantimos que o procedimento seja o mais confortável possível, preservando sua saúde bucal e evitando complicações futuras.</p>
                             </div>
                             <div class="buttons-container fade-in-element">
@@ -204,8 +215,8 @@ $_SESSION["page"] = "tratamentos";
                             </div>
                         </div>
                     </div>
-                    <div class="col-6 end">
-                        <h1 class="fade-in-element">Endodontia</h1>
+                    <div class="col-md-6 end">
+                        <h1 class="titulo-normal fade-in-element">Endodontia</h1>
                     </div>
                 </div>
             </div>
@@ -214,12 +225,13 @@ $_SESSION["page"] = "tratamentos";
         <section class="full">
             <div class="container">
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-md-6">
                         <h1 class="fade-in-element">Estética corporal</h1>
                     </div>
-                    <div class="col-6 bloco">
+                    <div class="col-md-6 bloco">
                         <div>
                             <div class="texto fade-in-element">
+                                <h1 class="fade-in-element">Estética corporal</h1>
                                 <p>Oferecemos uma variedade de procedimentos que ajudam a modelar o corpo, melhorar a textura da pele e combater sinais de envelhecimento, sempre com foco em resultados naturais e satisfatórios.</p>
                             </div>
                             <div class="buttons-container fade-in-element">

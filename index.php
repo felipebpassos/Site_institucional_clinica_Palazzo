@@ -12,16 +12,19 @@ $_SESSION["page"] = "home";
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="Clínica Palazzo |">
-    <meta property="og:description" content="A Clínia Palazzo é o espaço onde a excelência se une ao cuidado, visando aprimorar sua
-                        experiência e autoestima. Estamos aqui para oferecer um serviço de alta qualidade, focado em atender às suas necessidades
-                        de forma humanizada. Cada interação é tratada com a máxima atenção e respeito, para que você sinta-se
-                        confortável durante todo o processo. Nossa missão é proporcionar resultados
-                        que não apenas transformam sorrisos, mas também realçam a sua confiança interior.">
-    <meta property="og:image" content="http://localhost/palazzo/img/ico2.png">
-    <meta property="og:url" content="URL">
+    <meta name="description" content="Clínica Palazzo - Excelência em estética e odontologia em Aracaju, Sergipe. Oferecemos serviços de implantes dentários, clareamento dental, ortodontia, estética facial e corporal, nutrologia, reabilitação oral e endodontia. Agende sua consulta!">
+    <meta name="keywords" content="Clínica Palazzo, estética, odontologia, Aracaju, Sergipe, implantes dentários, clareamento dental, ortodontia, estética facial, estética corporal, nutrologia, reabilitação oral, endodontia, clínica de alto padrão, melhor dentista Aracaju, estética dental Aracaju, tratamentos estéticos Aracaju, clínica de estética Aracaju">
+    <meta name="author" content="Desenvolvido por Felipe Barreto Passos | Simplify Web">
+    <meta property="og:title" content="Clínica Palazzo - Estética e Odontologia de Alto Padrão em Aracaju">
+    <meta property="og:description" content="A Clínica Palazzo oferece serviços de estética e odontologia de alto padrão em Aracaju, Sergipe. Descubra nossos tratamentos de implantes dentários, clareamento, ortodontia e mais.">
+    <meta property="og:image" content="./img/ico2.png">
+    <meta property="og:url" content="https://www.clinicapalazzo.com.br">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Clínica Palazzo">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Clínica Palazzo - Estética e Odontologia de Alto Padrão em Aracaju">
+    <meta name="twitter:description" content="Descubra os serviços de estética e odontologia da Clínica Palazzo em Aracaju, Sergipe. Oferecemos tratamentos de implantes dentários, clareamento dental, ortodontia e mais.">
+    <meta name="twitter:image" content="./img/ico2.png">
     <title>Clínica Palazzo</title>
     <link rel="icon" href="./img/ico.ico">
 
@@ -129,7 +132,7 @@ $_SESSION["page"] = "home";
 
                 <div class="row">
                     <div class="col-md-6 mt-4">
-                        <a href="" class="fade-in-slide-up">
+                        <a href="tratamento.php?key=implantes" class="fade-in-slide-up">
                             <div class="tratamento">
                                 <span class="saiba-mais">Saiba Mais</span>
                                 <div class="content">
@@ -145,7 +148,7 @@ $_SESSION["page"] = "home";
                         </a>
                     </div>
                     <div class="col-md-6 mt-4">
-                        <a href="" class="fade-in-slide-up">
+                        <a href="tratamento.php?key=clareamento" class="fade-in-slide-up">
                             <div class="tratamento">
                                 <span class="saiba-mais">Saiba Mais</span>
                                 <div class="content">
@@ -164,7 +167,7 @@ $_SESSION["page"] = "home";
 
                 <div class="row">
                     <div class="col-md-6 mt-4">
-                        <a href="" class="fade-in-slide-up">
+                        <a href="tratamento.php?key=orto" class="fade-in-slide-up">
                             <div class="tratamento">
                                 <span class="saiba-mais">Saiba Mais</span>
                                 <div class="content">
@@ -180,7 +183,7 @@ $_SESSION["page"] = "home";
                         </a>
                     </div>
                     <div class="col-md-6 mt-4">
-                        <a href="" class="fade-in-slide-up">
+                        <a href="tratamento.php?key=endo" class="fade-in-slide-up">
                             <div class="tratamento">
                                 <span class="saiba-mais">Saiba Mais</span>
                                 <div class="content">
@@ -374,25 +377,30 @@ $_SESSION["page"] = "home";
             <div class="container mt-5 fade-in-slide-up" style="max-width: 600px; margin-top:0 !important;">
                 <form>
                     <div class="form-group">
-                        <input type="text" class="form-control" id="nome" placeholder="Digite seu nome" required>
+                        <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite seu nome" maxlength="40" required>
                     </div>
 
                     <div class="form-group">
-                        <input type="tel" class="form-control" id="telefone" placeholder="Telefone para contato" required>
+                        <input type="tel" class="form-control" id="telefone" name="celular" placeholder="Telefone para contato (+DDD)" maxlength="11" required>
                     </div>
 
                     <div class="form-group">
-                        <select class="form-control" id="tratamento" required>
+                        <select class="form-control" id="tratamento" name="tratamento" required>
                             <option value="" disabled selected>Selecione o tratamento</option>
-                            <option value="limpeza">Limpeza</option>
-                            <option value="extração">Extração</option>
-                            <option value="clareamento">Clareamento</option>
+                            <option value="Implante">Implante</option>
+                            <option value="Estética facial">Estética facial</option>
+                            <option value="Clareamento">Clareamento</option>
+                            <option value="Ortodontia">Ortodontia</option>
+                            <option value="Reabilitação oral">Reabilitação oral</option>
+                            <option value="Nutrólogo">Nutrólogo</option>
+                            <option value="Endodontia">Endodontia</option>
+                            <option value="Estética corporal">Estética corporal</option>
                             <!-- Adicione mais opções conforme necessário -->
                         </select>
                     </div>
 
                     <div class="form-group">
-                        <textarea class="form-control" id="mensagem" rows="4" placeholder="Digite uma mensagem (opcional)"></textarea>
+                        <textarea class="form-control" id="mensagem" name="mensagem" rows="4" placeholder="Digite uma mensagem (opcional)"></textarea>
                     </div>
 
                     <button type="submit" class="btn btn-primary">Enviar</button>
@@ -452,6 +460,7 @@ $_SESSION["page"] = "home";
     <script src="./js/carrossel.js"></script>
     <script src="./js/roleta.js"></script>
     <script src="./js/toggle-menu.js"></script>
+    <script src="./js/inputs.js"></script>
     <script src="./js/fade-in-slide-up.js"></script>
     <script src="./js/imagem-fundo.js"></script>
 

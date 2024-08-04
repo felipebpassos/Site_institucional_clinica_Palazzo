@@ -134,7 +134,7 @@ $profissionais = [
 ];
 
 // Pegando o nome do profissional da URL
-$profissional_nome = $_GET['nome'];
+$profissional_nome = isset($_GET['nome']) ? $_GET['nome'] : 'none';
 
 // Verificando se a chave do profissional existe no array
 if (!array_key_exists($profissional_nome, $profissionais)) {
@@ -152,9 +152,7 @@ $profissional = $profissionais[$profissional_nome];
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="Clínica Palazzo |">
-    <meta property="og:description" content="[DESCRIÇÃO DA CLÍNICA]">
-    <meta property="og:image" content="URL_DA_IMAGEM_PARA_COMPARTILHAMENTO">
+    <meta property="og:title" content="<?php echo $profissional['nome']; ?> | Clínica Palazzo">
     <meta property="og:url" content="URL">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Clínica Palazzo">

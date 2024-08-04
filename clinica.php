@@ -12,12 +12,19 @@ $_SESSION["page"] = "clinica";
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="Clínica Palazzo |">
-    <meta property="og:description" content="[DESCRIÇÃO DA CLÍNICA]">
-    <meta property="og:image" content="URL_DA_IMAGEM_PARA_COMPARTILHAMENTO">
-    <meta property="og:url" content="URL">
+    <meta name="description" content="Clínica Palazzo - Excelência em estética e odontologia em Aracaju, Sergipe. Oferecemos serviços de implantes dentários, clareamento dental, ortodontia, estética facial e corporal, nutrologia, reabilitação oral e endodontia. Agende sua consulta!">
+    <meta name="keywords" content="Clínica Palazzo, estética, odontologia, Aracaju, Sergipe, implantes dentários, clareamento dental, ortodontia, estética facial, estética corporal, nutrologia, reabilitação oral, endodontia, clínica de alto padrão, melhor dentista Aracaju, estética dental Aracaju, tratamentos estéticos Aracaju, clínica de estética Aracaju">
+    <meta name="author" content="Desenvolvido por Felipe Barreto Passos | Simplify Web">
+    <meta property="og:title" content="A Clínica | Clínica Palazzo">
+    <meta property="og:description" content="Clínica Palazzo - Excelência em estética e odontologia em Aracaju, Sergipe. Oferecemos serviços de implantes dentários, clareamento dental, ortodontia, estética facial e corporal, nutrologia, reabilitação oral e endodontia. Agende sua consulta!">
+    <meta property="og:image" content="./img/ico2.png">
+    <meta property="og:url" content="https://www.clinicapalazzo.com.br/clinica.php">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Clínica Palazzo">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="A Clínica | Clínica Palazzo">
+    <meta name="twitter:description" content="Descubra os serviços de estética e odontologia da Clínica Palazzo em Aracaju, Sergipe. Oferecemos tratamentos de implantes dentários, clareamento dental, ortodontia e mais.">
+    <meta name="twitter:image" content="./img/ico2.png">
     <title>A Clínica | Palazzo</title>
     <link rel="icon" href="./img/ico.ico">
 
