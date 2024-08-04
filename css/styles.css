@@ -795,21 +795,7 @@ header.hovered .logodourada {
     margin-bottom: 80px;
     position: relative;
     padding: 30px 50px;
-    perspective: 1000px;
     text-decoration: none !important;
-    transition: all 0.8s ease;
-}
-
-.rotate {
-    transform: rotateX(180deg);
-}
-
-.tratamento .content {
-    transition: transform 0.8s ease;
-}
-
-.tratamento.rotate .content {
-    transform: rotateX(-180deg);
 }
 
 .tratamento .icone {
@@ -817,6 +803,28 @@ header.hovered .logodourada {
     display: block;
     height: 80px;
     filter: grayscale(1) brightness(1);
+    transition: transform 0.8s ease; /* Adicionei uma transição suave */
+}
+
+/* Defina a animação do ícone */
+@keyframes icon-jump {
+    0% {
+        transform: scale(1);
+    }
+    30% {
+        transform: scale(1.1) translateY(-5px);
+    }
+    50% {
+        transform: scale(1.05) translateY(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Aplique a animação ao passar o mouse */
+.tratamento:hover .icone {
+    animation: icon-jump 0.5s forwards; /* Animação de 0.5s com forwards para manter o estado final */
 }
 
 .tratamento .titulo {
@@ -828,6 +836,25 @@ header.hovered .logodourada {
 .tratamento .descricao {
     color: #dddddd80;
     text-align: center;
+}
+
+/* Estilo para o span .saiba-mais */
+.tratamento .saiba-mais {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: rgb(223, 214, 207);
+    color: #000000;
+    font-weight: bold;
+    padding: 3px 8px;
+    border-radius: 3px;
+    font-size: 13px;
+    display: none; /* Inicialmente escondido */
+}
+
+/* Mostre o span no hover */
+.tratamento:hover .saiba-mais {
+    display: block;
 }
 
 .cta {
@@ -937,7 +964,9 @@ header.hovered .logodourada {
     transition: all 0.5s ease;
 }
 
-.vantagem:hover {transform: translateY(-15px);}
+.vantagem:hover {
+    transform: translateY(-15px);
+}
 
 .vantagem img {
     display: block;
@@ -1022,9 +1051,115 @@ header.hovered .logodourada {
     right: -15px;
 }
 
-.tecnologias {
-    background-color: black;
-    height: 650px;
+#roleta {
+    padding: 120px 40px;
+    padding-bottom: 150px;
+    background-color: #000;
+    color: rgb(223, 214, 207);
+}
+
+.roleta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.roleta-container {
+    display: flex;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease;
+}
+
+.roleta-card {
+    width: 309px;
+    height: 540px;
+    margin: 0 5px;
+    background: #222;
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.12);
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    z-index: 1;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.roleta-card video {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    display: none;
+}
+
+.thumbnail {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.thumbnail img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.play-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    color: white;
+    text-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+}
+
+.video-controls {
+    display: none;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    gap: 10px;
+}
+
+.video-controls button {
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: #fff;
+    display: flex;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.video-controls button:hover {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.roleta-card.active {
+    transform: translateX(0) scale(1);
+    opacity: 1;
+    z-index: 2;
+}
+
+.roleta-card.inactive-left {
+    transform: translateX(-30%) scale(0.9) rotateY(-10deg);
+    opacity: 0.6;
+    z-index: 1;
+}
+
+.roleta-card.inactive-right {
+    transform: translateX(30%) scale(0.9) rotateY(10deg);
+    opacity: 0.6;
+    z-index: 1;
 }
 
 .fale-conosco {

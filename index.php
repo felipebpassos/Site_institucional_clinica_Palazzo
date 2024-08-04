@@ -75,7 +75,7 @@ $_SESSION["page"] = "home";
                             <img class="overlay-img" src="./img/overlay.png" alt="Overlay-Hero">
                             <div class="hero-text-container">
                                 <h1>Onde a beleza<br>encontra a precisão</h1>
-                                <p>Profissionais experientes e tecnologia de ponta para transformar seu sorriso e sua saúde.</p>
+                                <p>Profissionais experientes e tecnologia de ponta que transformarão seu sorriso e sua saúde.</p>
                                 <div class="buttons-container">
                                     <a href="clinica.php"><button class="blur-btn">A clínica</button></a>
                                     <a href="tratamentos.php"><button class="blur-btn">Tratamentos</button></a>
@@ -131,6 +131,7 @@ $_SESSION["page"] = "home";
                     <div class="col-md-6 mt-4">
                         <a href="" class="fade-in-slide-up">
                             <div class="tratamento">
+                                <span class="saiba-mais">Saiba Mais</span>
                                 <div class="content">
                                     <img class="icone" src="./img/reabilitacao.png" alt="Impante Dentário">
                                     <div class="titulo">
@@ -146,6 +147,7 @@ $_SESSION["page"] = "home";
                     <div class="col-md-6 mt-4">
                         <a href="" class="fade-in-slide-up">
                             <div class="tratamento">
+                                <span class="saiba-mais">Saiba Mais</span>
                                 <div class="content">
                                     <img class="icone" src="./img/clareamento.png" alt="Clareamento Dentário">
                                     <div class="titulo">
@@ -164,6 +166,7 @@ $_SESSION["page"] = "home";
                     <div class="col-md-6 mt-4">
                         <a href="" class="fade-in-slide-up">
                             <div class="tratamento">
+                                <span class="saiba-mais">Saiba Mais</span>
                                 <div class="content">
                                     <img class="icone" src="./img/orto.png" alt="Ortodontia">
                                     <div class="titulo">
@@ -179,6 +182,7 @@ $_SESSION["page"] = "home";
                     <div class="col-md-6 mt-4">
                         <a href="" class="fade-in-slide-up">
                             <div class="tratamento">
+                                <span class="saiba-mais">Saiba Mais</span>
                                 <div class="content">
                                     <img class="icone" src="./img/endo.png" alt="Endodontia">
                                     <div class="titulo">
@@ -276,6 +280,48 @@ $_SESSION["page"] = "home";
                 </div>
                 <div class="ver-mais">
                     <a href="equipe.php">Ver mais</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="roleta">
+            <h2 class="section-title fade-in-slide-up margin-big">CONHEÇA NOSSA CLÍNICA
+            </h2>
+            <div class="roleta">
+                <div class="roleta-container">
+                    <div class="roleta-card inactive-left">
+                        <div class="thumbnail">
+                            <img src="./img/thumb1.png" alt="Thumbnail 1">
+                            <div class="play-icon"><i class="fas fa-play"></i></div>
+                        </div>
+                        <video src="./videos/clinica.mp4" muted loop></video>
+                        <div class="video-controls">
+                            <button class="maximize-btn"><i class="fas fa-expand"></i></button>
+                            <button class="mute-btn"><i class="fas fa-volume-mute"></i></button>
+                        </div>
+                    </div>
+                    <div class="roleta-card">
+                        <div class="thumbnail">
+                            <img src="./img/thumb2.png" alt="Thumbnail 2">
+                            <div class="play-icon"><i class="fas fa-play"></i></div>
+                        </div>
+                        <video src="./videos/video01.mp4" muted loop></video>
+                        <div class="video-controls">
+                            <button class="maximize-btn"><i class="fas fa-expand"></i></button>
+                            <button class="mute-btn"><i class="fas fa-volume-mute"></i></button>
+                        </div>
+                    </div>
+                    <div class="roleta-card inactive-right">
+                        <div class="thumbnail">
+                            <img src="./img/thumb3.png" alt="Thumbnail 3">
+                            <div class="play-icon"><i class="fas fa-play"></i></div>
+                        </div>
+                        <video src="./videos/video03.mp4" muted loop></video>
+                        <div class="video-controls">
+                            <button class="maximize-btn"><i class="fas fa-expand"></i></button>
+                            <button class="mute-btn"><i class="fas fa-volume-mute"></i></button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -401,10 +447,10 @@ $_SESSION["page"] = "home";
     <script src="./js/header-effect.js"></script>
     <script src="./js/header-effect2.js"></script>
     <script src="./js/message-button.js"></script>
-    <script src="./js/hover-invert.js"></script>
     <script src="./js/video-player.js"></script>
     <script src="./js/slide.js"></script>
     <script src="./js/carrossel.js"></script>
+    <script src="./js/roleta.js"></script>
     <script src="./js/toggle-menu.js"></script>
     <script src="./js/fade-in-slide-up.js"></script>
     <script src="./js/imagem-fundo.js"></script>
