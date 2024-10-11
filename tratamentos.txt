@@ -1,0 +1,154 @@
+'facial' => [
+        'h1' => 'Transforme Seu Rosto com<br>Harmonização Facial Personalizada',
+        'titulo' => 'Estética Facial',
+        'metaDescricao' => 'Harmonizamos suas características faciais de forma natural, realçando a beleza única com atendimento personalizado e resultados satisfatórios.',
+        'keywords' => 'estética facial, harmonização facial, beleza natural, atendimento personalizado',
+        'texto' => 'Harmonizamos suas características de forma natural e satisfatória, destacando a sua beleza única. Com foco no paciente e atendimento personalizado, garantimos resultados que realçam o melhor de você.',
+        'video' => './videos/facial.mp4',
+        'problemas' => [
+            [
+                'titulo' => 'Rugas e linhas de expressão',
+                'descricao' => 'Tratamentos estéticos faciais podem suavizar rugas e linhas de expressão, proporcionando uma aparência mais jovem e revitalizada.'
+            ],
+            [
+                'titulo' => 'Desbalanceamento facial',
+                'descricao' => 'A harmonização facial pode corrigir assimetrias e desbalanceamentos, criando um perfil facial mais harmonioso e atraente.'
+            ],
+            [
+                'titulo' => 'Perda de volume facial',
+                'descricao' => 'Procedimentos estéticos podem restaurar o volume perdido, melhorando a contorno do rosto e a aparência geral.'
+            ]
+        ]
+    ],
+    'clareamento' => [
+        'h1' => 'Sorriso Brilhante com<br>Tratamento de Clareamento Dental',
+        'titulo' => 'Clareamento',
+        'metaDescricao' => 'Tratamentos de clareamento dental para um sorriso mais brilhante, utilizando métodos seguros e comprovados para remover manchas e descolorações dos dentes.',
+        'keywords' => 'clareamento dental, sorriso brilhante, tratamentos dentários, remoção de manchas',
+        'texto' => 'O caminho mais rápido e eficaz para um sorriso mais brilhante. Utilizando métodos seguros e comprovados, nossos tratamentos removem manchas e descolorações, resultando em dentes visivelmente mais brancos.',
+        'video' => './videos/clareamento.mp4',
+        'problemas' => [
+            [
+                'titulo' => 'Dentes amarelados',
+                'descricao' => 'O clareamento dental remove manchas e descolorações, proporcionando dentes mais brancos e um sorriso radiante.'
+            ],
+            [
+                'titulo' => 'Descoloração causada por alimentos e bebidas',
+                'descricao' => 'Tratamentos de clareamento podem neutralizar os efeitos de alimentos e bebidas que causam manchas nos dentes.'
+            ],
+            [
+                'titulo' => 'Desgaste natural do esmalte',
+                'descricao' => 'Procedimentos de clareamento ajudam a restaurar a cor natural dos dentes, minimizando o desgaste e a opacidade.'
+            ]
+        ]
+    ],
+    'orto' => [
+        'h1' => 'Sorriso Alinhado com<br>Ortodontia de Alta Qualidade',
+        'titulo' => 'Ortodontia',
+        'metaDescricao' => 'Serviços de ortodontia que alinham os dentes e melhoram a saúde bucal e estética do sorriso com aparelhos modernos e técnicas avançadas.',
+        'keywords' => 'ortodontia, alinhamento dos dentes, saúde bucal, estética do sorriso, aparelhos ortodônticos',
+        'texto' => 'Nossos serviços de ortodontia vão além de apenas alinhar os dentes, eles visam melhorar a sua saúde bucal e a estética do seu sorriso. Utilizamos aparelhos modernos e técnicas avançadas para corrigir desalinhamentos e problemas de mordida, garantindo resultados duradouros e um sorriso mais harmonioso.',
+        'video' => './videos/orto.mp4',
+        'problemas' => [
+            [
+                'titulo' => 'Dentes desalinhados',
+                'descricao' => 'Ortodontia corrige o desalinhamento dos dentes, melhorando a estética do sorriso e a função mastigatória.'
+            ],
+            [
+                'titulo' => 'Problemas de mordida',
+                'descricao' => 'Tratamentos ortodônticos resolvem problemas como mordida cruzada, mordida aberta e sobremordida, promovendo uma mordida saudável.'
+            ],
+            [
+                'titulo' => 'Espaços entre dentes',
+                'descricao' => 'A ortodontia pode fechar espaços indesejados entre os dentes, criando um sorriso mais uniforme e funcional.'
+            ]
+        ]
+    ],
+    'reabilitacao' => [
+        'h1' => 'Reconstrução e Recuperação com<br>Reabilitação Oral Especializada',
+        'titulo' => 'Reabilitação Oral',
+        'metaDescricao' => 'Oferecemos tratamentos de reabilitação oral para corrigir problemas dentários e reconstruir estruturas danificadas, melhorando mastigação, fala e estética do sorriso.',
+        'keywords' => 'reabilitação oral, tratamento dentário, reconstrução dental, saúde bucal',
+        'texto' => 'Oferecemos uma variedade de tratamentos de reabilitação que envolvem desde a correção de problemas dentários como cáries e desgastes, até a reconstrução de estruturas dentárias danificadas, melhorando sua mastigação, fala, funcionalidade e a estética do seu sorriso.',
+        'video' => './videos/reabilitacao.mp4',
+        'problemas' => [
+            [
+                'titulo' => 'Cáries avançadas',
+                'descricao' => 'Tratamentos de reabilitação oral restauram dentes danificados por cáries avançadas, recuperando a funcionalidade e a estética.'
+            ],
+            [
+                'titulo' => 'Desgaste dentário',
+                'descricao' => 'Reabilitação oral pode corrigir dentes desgastados e restaurar sua forma e função original.'
+            ],
+            [
+                'titulo' => 'Estruturas dentárias danificadas',
+                'descricao' => 'Procedimentos de reabilitação reconstroem dentes e estruturas dentárias danificadas, melhorando a saúde bucal geral.'
+            ]
+        ]
+    ],
+    'nutrologo' => [
+        'h1' => 'Equilibre Sua Saúde com<br>Consultas de Nutrologia Personalizadas',
+        'titulo' => 'Nutrólogo',
+        'metaDescricao' => 'Serviços de nutrologia para melhorar a qualidade de vida através de uma alimentação equilibrada e personalizada, refletindo positivamente na saúde geral.',
+        'keywords' => 'nutrologia, alimentação equilibrada, saúde geral, equilíbrio nutricional',
+        'texto' => 'A saúde começa de dentro para fora, e nossos serviços de nutrologia são projetados para melhorar a sua qualidade de vida através de uma alimentação equilibrada e adequada às suas necessidades. Com acompanhamento personalizado, ajudamos você a alcançar um equilíbrio nutricional que reflete positivamente na sua saúde geral.',
+        'video' => './videos/nutrologo.mp4',
+        'problemas' => [
+            [
+                'titulo' => 'Desequilíbrios nutricionais',
+                'descricao' => 'Consultas de nutrologia ajudam a identificar e corrigir desequilíbrios nutricionais, melhorando a saúde e o bem-estar.'
+            ],
+            [
+                'titulo' => 'Dietas inadequadas',
+                'descricao' => 'Orientação nutricional personalizada pode corrigir dietas inadequadas e promover uma alimentação equilibrada e saudável.'
+            ],
+            [
+                'titulo' => 'Problemas de saúde relacionados à alimentação',
+                'descricao' => 'Nutrologia pode ajudar a tratar problemas de saúde relacionados à alimentação, como obesidade e diabetes.'
+            ]
+        ]
+    ],
+    'endo' => [
+        'h1' => 'Preserve Seu Dente com<br>Tratamento de Endodontia Eficiente',
+        'titulo' => 'Endodontia',
+        'metaDescricao' => 'Tratamentos de endodontia para salvar dentes e evitar extrações com técnicas minimamente invasivas, garantindo conforto e preservando a saúde bucal.',
+        'keywords' => 'endodontia, tratamento de canal, saúde bucal, preservação dental',
+        'texto' => 'Com técnicas avançadas e minimamente invasivas, nossos tratamentos de endodontia visam salvar dentes comprometidos e evitar extrações. Garantimos conforto durante o procedimento e preservamos a saúde bucal, mantendo a integridade do seu sorriso.',
+        'video' => './videos/endo.mp4',
+        'problemas' => [
+            [
+                'titulo' => 'Dente com infecção',
+                'descricao' => 'Tratamento de canal para dentes infectados, aliviando a dor e evitando a extração, preservando a função e a estética do dente.'
+            ],
+            [
+                'titulo' => 'Dente fraturado',
+                'descricao' => 'Procedimentos endodônticos podem tratar dentes fraturados e restaurar sua função e integridade.'
+            ],
+            [
+                'titulo' => 'Dente com cárie profunda',
+                'descricao' => 'Endodontia pode remover a cárie profunda e tratar o dente afetado, garantindo a sua preservação e saúde bucal.'
+            ]
+        ]
+    ],
+    'estetica' => [
+        'h1' => 'Transforme Seu Corpo com<br>Tratamentos de Estética Corporal Avançados',
+        'titulo' => 'Estética Corporal',
+        'metaDescricao' => 'Tratamentos de estética corporal para modelar o corpo, melhorar a textura da pele e combater sinais de envelhecimento com resultados naturais e satisfatórios.',
+        'keywords' => 'estética corporal, modelagem corporal, textura da pele, envelhecimento',
+        'texto' => 'Oferecemos uma variedade de procedimentos para modelar o corpo, melhorar a textura da pele e combater sinais de envelhecimento. Com foco em resultados naturais e satisfatórios, garantimos tratamentos personalizados que atendem às suas necessidades estéticas e de bem-estar.',
+        'video' => './videos/estetica.mp4',
+        'problemas' => [
+            [
+                'titulo' => 'Textura da pele irregular',
+                'descricao' => 'Tratamentos de estética corporal ajudam a suavizar a textura da pele, proporcionando uma aparência mais uniforme e saudável.'
+            ],
+            [
+                'titulo' => 'Sinais de envelhecimento',
+                'descricao' => 'Procedimentos estéticos ajudam a combater sinais de envelhecimento, como rugas e flacidez, para um visual rejuvenescido e revitalizado.'
+            ],
+            [
+                'titulo' => 'Acúmulo de gordura localizada',
+                'descricao' => 'Tratamentos eficazes para reduzir o acúmulo de gordura localizada e modelar o corpo, promovendo um contorno mais harmonioso e esculpido.'
+            ]
+        ]
+    ]

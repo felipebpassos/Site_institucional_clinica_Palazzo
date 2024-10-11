@@ -77,7 +77,7 @@ $_SESSION["page"] = "home";
                         <div class="slide-relative">
                             <img class="overlay-img" src="./img/overlay.png" alt="Overlay-Hero">
                             <div class="hero-text-container">
-                                <h1>Onde a beleza<br>encontra a precisão</h1>
+                                <h1>Seu bem-estar é<br>nossa prioridade</h1>
                                 <p>Profissionais experientes e tecnologia de ponta que transformarão seu sorriso e sua saúde.</p>
                                 <div class="buttons-container">
                                     <a href="clinica.php"><button class="blur-btn">A clínica</button></a>
@@ -89,23 +89,19 @@ $_SESSION["page"] = "home";
                     </div>
                     <div class="slide">
                         <div class="slide-relative">
-                            <picture class="slides">
-                                <source srcset="./img/thumbnail-main.png" media="(min-width: 768px)">
-                                <source srcset="./img/thumbnail-main-portrait.png" media="(min-width: 500px)">
-                                <img src="./img/thumbnail-main-portrait-min.png" alt="Entrevista Winícius Aragão - Clínica Palazzo">
-                            </picture>
+                            <img src="./img/fachada.png" alt="Fachada Clínica Palazzo">
 
                             <div class="overlay-main"></div>
                             <div class="hero-content">
-                                <h1>Excelência e Dedicação Total<br>aos Pacientes</h1>
-                                <div class="ver-video-box" onclick="openVideoModal('./videos/entrevista.mp4')">
+                                <h1>Ambientes Modernos e<br> Aconchegantes</h1>
+                                <div class="ver-video-box" onclick="openVideoModal('./videos/clinica-main.mp4')">
                                     <div class="play-box">
                                         <svg version="1.1" x="0px" y="0px" viewBox="0 0 12.8 15">
                                             <path d="M0.2,14c0-0.7,0-12.5,0-13c0-0.6,0.6-1.1,1.2-0.7c0.5,0.3,9.9,6,10.8,6.5c0.6,0.3,0.5,1.1,0,1.4 c-0.6,0.4-10.1,6.1-10.8,6.5C0.9,15,0.2,14.7,0.2,14z">
                                             </path>
                                         </svg>
                                     </div>
-                                    <span style="color: rgb(223, 214, 207);">Ver vídeo</span>
+                                    <span style="color: rgb(223, 214, 207);">Conheça</span>
                                 </div>
                             </div>
                         </div>
@@ -223,9 +219,7 @@ $_SESSION["page"] = "home";
                                 altamente qualificados.
                                 Cada membro da nossa equipe tem compromisso com a excelência e a busca pela
                                 satisfação
-                                dos nossos pacientes. Com experiência e paixão pelo que fazem, nossos especialistas estão prontos para
-                                oferecer o
-                                melhor atendimento em cuidados estéticos e, acima de tudo, de saúde.</p>
+                                dos nossos pacientes.</p>
                         </div>
                     </div>
                     <div class="col-md-7">
@@ -235,34 +229,41 @@ $_SESSION["page"] = "home";
                                     <!-- Profissional 1 -->
                                     <div class="quadro">
                                         <div class="box-img-pro" style="margin-bottom:20px;">
-                                            <img src="./img/img6.png" alt="Profissional 1">
+                                            <img src="./img/img6.png" alt="Winicius Aragão">
                                         </div>
                                         <h5>Dr. Winícius Aragão</h5>
-                                        <p>Aprenda os atalhos de teclado personalizados de Lucas que permitirão que você flua pelo programa com mais agilidade.</p>
+                                        <p>Especialista em implante e prótese dentária.</p>
                                     </div>
                                     <!-- Profissional 2 -->
                                     <div class="quadro">
                                         <div class="box-img-pro" style="margin-bottom:20px;">
-                                            <img src="./img/paula.jpeg" alt="Profissional 3">
+                                            <img src="./img/paula.jpeg" alt="Gabriella Leite">
                                         </div>
-                                        <h5>Dra. Paula Cavalcante</h5>
-                                        <p>Aprenda os atalhos de teclado personalizados de Lucas que permitirão que você flua pelo programa com mais agilidade.</p>
+                                        <h5>Dra. Gabriella Leite Souza</h5>
+                                        <p>Nutróloga</p>
                                     </div>
                                     <!-- Profissional 3 -->
                                     <div class="quadro">
                                         <div class="box-img-pro" style="margin-bottom:20px;">
-                                            <img src="./img/ingrid.png" alt="Profissional 2">
+                                            <img src="./img/amara.jpeg" alt="Amara Oliveira">
                                         </div>
-                                        <h5>Dra. Ingrid</h5>
-                                        <p>Aprenda os atalhos de teclado personalizados de Lucas que permitirão que você flua pelo programa com mais agilidade.</p>
+                                        <h5>Dra. Amara Oliveira</h5>
+                                        <p>Especialista em Endodontia (Canal).</p>
                                     </div>
                                     <!-- Profissional 4 -->
                                     <div class="quadro">
                                         <div class="box-img-pro" style="margin-bottom:20px;">
-                                            <img src="./img/luana.jpeg" alt="Profissional 4">
+                                            <img src="./img/ellen.jpeg" alt="Ellen Santana">
                                         </div>
-                                        <h5>Dra. Luana</h5>
-                                        <p>Aprenda os atalhos de teclado personalizados de Lucas que permitirão que você flua pelo programa com mais agilidade.</p>
+                                        <h5>Dra. Ellen Santana</h5>
+                                        <p>Especialista em harmonização facial.</p>
+                                    </div>
+                                    <div class="quadro">
+                                        <div class="box-img-pro" style="margin-bottom:20px;">
+                                            <img src="./img/renatha2.jpeg" alt="Renatha Andrade">
+                                        </div>
+                                        <h5>Dra. Renatha Andrade</h5>
+                                        <p>Especialista em clareamento dental e limpeza.</p>
                                     </div>
                                 </div>
                             </div>
@@ -375,7 +376,7 @@ $_SESSION["page"] = "home";
                 <img src="./img/divisoria-preta.png" style="margin-bottom: 80px;"></img>
             </div>
             <div class="container mt-5 fade-in-slide-up" style="max-width: 600px; margin-top:0 !important;">
-                <form>
+                <form method="post" action="contato.php">
                     <div class="form-group">
                         <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite seu nome" maxlength="40" required>
                     </div>
@@ -385,15 +386,17 @@ $_SESSION["page"] = "home";
                     </div>
 
                     <div class="form-group">
-                        <select class="form-control" id="tratamento" name="tratamento" required>
+                        <select class="form-control" id="tratamento" name="tratamento">
                             <option value="" disabled selected>Selecione o tratamento</option>
                             <option value="Implante">Implante</option>
-                            <option value="Estética facial">Estética facial</option>
                             <option value="Clareamento">Clareamento</option>
+                            <option value="Lentes de contato">Lentes de contato</option>
+                            <option value="Estética facial">Estética facial</option>
                             <option value="Ortodontia">Ortodontia</option>
                             <option value="Reabilitação oral">Reabilitação oral</option>
                             <option value="Nutrólogo">Nutrólogo</option>
                             <option value="Endodontia">Endodontia</option>
+                            <option value="Invisalign">Invisalign</option>
                             <option value="Estética corporal">Estética corporal</option>
                             <!-- Adicione mais opções conforme necessário -->
                         </select>

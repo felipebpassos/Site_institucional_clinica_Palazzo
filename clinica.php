@@ -67,7 +67,7 @@ $_SESSION["page"] = "clinica";
                     <!-- Botões lado a lado -->
                     <div class="d-flex fade-in-element">
                         <a href="https://api.whatsapp.com/send?phone=5579991769191&text=Ol%C3%A1!%20Vim%20atrav%C3%A9s%20do%20site%20e%20gostaria%20de%20agendar%20uma%20consulta%20%" target="_blank"><button type="button" class="btn-2" id="agendar">Agendar consulta</button></a>
-                        <a href="tratamentos.php"><button type="button" class="btn-2">Serviços</button></a>
+                        <a href="tratamentos.php"><button type="button" class="btn-2">Tratamentos</button></a>
                     </div>
                 </div>
             </div>
@@ -77,35 +77,72 @@ $_SESSION["page"] = "clinica";
             <h1 class="titulo text-center titulo-espaco fade-in-element">Nosso espaço</h1>
             <p class="text-center fade-in-element" style="margin: auto; margin-bottom: 100px;">Nossos ambientes cuidadosamente planejados incluem salas de espera espaçosas e confortáveis, consultórios modernos equipados com as mais recentes tecnologias.</p>
             <!-- Galeria de fotos -->
-            <div class="row fade-in-element">
-                <div class="img-card">
-                    <div class="overlay-img"></div>
-                    <img src="./img/room1.jpeg" alt="Descrição da imagem 1" class="img-fluid">
+            <div id="img-normal">
+                <div class="row fade-in-element">
+                    <div class="img-card">
+                        <div class="overlay-img"></div>
+                        <img src="./img/room1.jpeg" alt="Descrição da imagem 1" class="img-fluid">
+                    </div>
+                    <div class="img-card">
+                        <div class="overlay-img"></div>
+                        <img src="./img/room2.jpeg" alt="Descrição da imagem 2" class="img-fluid">
+                    </div>
+                    <div class="img-card">
+                        <div class="overlay-img"></div>
+                        <img src="./img/room3.jpeg" alt="Descrição da imagem 3" class="img-fluid">
+                    </div>
+                    <!-- Adicione mais colunas conforme necessário -->
                 </div>
-                <div class="img-card">
-                    <div class="overlay-img"></div>
-                    <img src="./img/room2.jpeg" alt="Descrição da imagem 2" class="img-fluid">
+                <div class="row fade-in-element">
+                    <div class="img-card">
+                        <div class="overlay-img"></div>
+                        <img src="./img/room4.jpeg" alt="Descrição da imagem 1" class="img-fluid">
+                    </div>
+                    <div class="img-card">
+                        <div class="overlay-img"></div>
+                        <img src="./img/room5.jpeg" alt="Descrição da imagem 2" class="img-fluid">
+                    </div>
+                    <div class="img-card">
+                        <div class="overlay-img"></div>
+                        <img src="./img/room6.jpeg" alt="Descrição da imagem 3" class="img-fluid">
+                    </div>
+                    <!-- Adicione mais colunas conforme necessário -->
                 </div>
-                <div class="img-card">
-                    <div class="overlay-img"></div>
-                    <img src="./img/room3.jpeg" alt="Descrição da imagem 3" class="img-fluid">
-                </div>
-                <!-- Adicione mais colunas conforme necessário -->
             </div>
-            <div class="row fade-in-element">
-                <div class="img-card">
-                    <div class="overlay-img"></div>
-                    <img src="./img/room4.jpeg" alt="Descrição da imagem 1" class="img-fluid">
+            <div id="img-responsivo">
+                <div class="row fade-in-element">
+                    <div class="img-card">
+                        <div class="overlay-img"></div>
+                        <img src="./img/room1.jpeg" alt="Descrição da imagem 1" class="img-fluid">
+                    </div>
+                    <div class="img-card">
+                        <div class="overlay-img"></div>
+                        <img src="./img/room2.jpeg" alt="Descrição da imagem 2" class="img-fluid">
+                    </div>
+                    <!-- Adicione mais colunas conforme necessário -->
                 </div>
-                <div class="img-card">
-                    <div class="overlay-img"></div>
-                    <img src="./img/room5.jpeg" alt="Descrição da imagem 2" class="img-fluid">
+                <div class="row fade-in-element">
+                    <div class="img-card">
+                        <div class="overlay-img"></div>
+                        <img src="./img/room3.jpeg" alt="Descrição da imagem 3" class="img-fluid">
+                    </div>
+                    <div class="img-card">
+                        <div class="overlay-img"></div>
+                        <img src="./img/room4.jpeg" alt="Descrição da imagem 1" class="img-fluid">
+                    </div>
+                    <!-- Adicione mais colunas conforme necessário -->
                 </div>
-                <div class="img-card">
-                    <div class="overlay-img"></div>
-                    <img src="./img/room6.jpeg" alt="Descrição da imagem 3" class="img-fluid">
+                <div class="row fade-in-element">
+                    <div class="img-card">
+                        <div class="overlay-img"></div>
+                        <img src="./img/room5.jpeg" alt="Descrição da imagem 2" class="img-fluid">
+                    </div>
+                    <div class="img-card">
+                        <div class="overlay-img"></div>
+                        <img src="./img/room6.jpeg" alt="Descrição da imagem 3" class="img-fluid">
+                    </div>
+                    <!-- Adicione mais colunas conforme necessário -->
                 </div>
-                <!-- Adicione mais colunas conforme necessário -->
             </div>
         </section>
 

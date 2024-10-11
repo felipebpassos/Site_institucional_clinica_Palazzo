@@ -4,7 +4,7 @@
     <div class="header-container">
 
         <a class="logo" href="index.php"><img src="./img/logo.png" alt="Palazzo logo"></a>
-        <a class="logodourada" href="index.php"><img src="./img/logo_dourada.png" alt="Palazzo logo dourada"></a>
+        <a class="logodourada" href="index.php"><img src="./img/logo_bege.png" alt="Palazzo logo bege"></a>
 
         <button class="toggle-menu" id="menu-toggle">
             <i class="fa-solid fa-bars" style="margin-right: 15px;"></i>

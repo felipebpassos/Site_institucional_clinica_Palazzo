@@ -231,7 +231,6 @@ $_SESSION["page"] = "tratamentos";
                     <div class="col-md-6 bloco">
                         <div>
                             <div class="texto fade-in-element">
-                                <h1 class="fade-in-element">Estética corporal</h1>
                                 <p>Oferecemos uma variedade de procedimentos que ajudam a modelar o corpo, melhorar a textura da pele e combater sinais de envelhecimento, sempre com foco em resultados naturais e satisfatórios.</p>
                             </div>
                             <div class="buttons-container fade-in-element">

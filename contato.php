@@ -6,21 +6,22 @@ use PHPMailer\PHPMailer\Exception;
 // Carrega o autoload do Composer para carregar as classes do PHPMailer
 require 'vendor/autoload.php';
 
-// Verifica se o formulário foi submetido
-if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['nome']) && isset($_POST['celular']) && isset($_POST['tratamento']) && isset($_POST['mensagem'])) {
-    // Função para sanitizar as entradas
-    function sanitize_input($data) {
-        $data = trim($data);
-        $data = stripslashes($data);
-        $data = htmlspecialchars($data);
-        return $data;
-    }
+function sanitize_input($data) {
+    $data = trim($data);
+    $data = stripslashes($data);
+    $data = htmlspecialchars($data);
+    return $data;
+}
 
-    // Sanitize input data
+// Verifica se o formulário foi submetido
+if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['nome']) && isset($_POST['celular'])) {
+    // Sanitiza as entradas
     $nome = sanitize_input($_POST["nome"]);
     $celular = sanitize_input($_POST["celular"]);
-    $tratamento = sanitize_input($_POST["tratamento"]);
-    $mensagem = sanitize_input($_POST["mensagem"]);
+    
+    // Sanitiza ou define valores padrão para campos opcionais
+    $tratamento = isset($_POST["tratamento"]) && !empty($_POST["tratamento"]) ? sanitize_input($_POST["tratamento"]) : "Não informado";
+    $mensagem = isset($_POST["mensagem"]) && !empty($_POST["mensagem"]) ? sanitize_input($_POST["mensagem"]) : "Nenhuma mensagem fornecida";
 
     // Cria uma nova instância do PHPMailer
     $mail = new PHPMailer(true);
@@ -31,13 +32,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['nome']) && isset($_POS
         $mail->Host = 'smtp.hostinger.com.br'; // Hostinger SMTP server
         $mail->SMTPAuth = true;
         $mail->Username = 'contato@clinicapalazzo.com.br'; // Seu e-mail
-        $mail->Password = ''; // Sua senha de e-mail
+        $mail->Password = 'Winicius111084@'; // Sua senha de e-mail
         $mail->SMTPSecure = 'ssl'; // Use TLS encryption, `ssl` also accepted
         $mail->Port = 465; // TCP port to connect to
 
         // Define o remetente e o destinatário
-        $mail->setFrom('contato@clinicapalazzo.com.br', 'Paula Pontes');
+        $mail->setFrom('contato@clinicapalazzo.com.br', 'Site Clínica Palazzo');
         $mail->addAddress('contato@clinicapalazzo.com.br');
+
+        // Define o charset como UTF-8 para evitar problemas com acentuação
+        $mail->CharSet = 'UTF-8';
 
         // Define o assunto e o corpo do e-mail
         $mail->Subject = 'Novo contato do site';

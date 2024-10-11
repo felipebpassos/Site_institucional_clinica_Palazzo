@@ -60,22 +60,11 @@ $_SESSION["page"] = "equipe";
                     </a>
                 </div>
 
-                <!-- Card do Profissional 2 -->
-                <div class="col-md-4">
-                    <a href="profissional.php?nome=Ingrid" class="card text-decoration-none text-dark">
-                        <img src="./img/ingrid.png" class="card-img-top" alt="Dra. Ingrid">
-                        <div class="card-body">
-                            <h5 class="card-title">Dra. Ingrid</h5>
-                            <p class="card-text">Biomédica esteta</p>
-                        </div>
-                    </a>
-                </div>
-
                 <div class="col-md-4">
                     <a href="profissional.php?nome=Paula" class="card text-decoration-none text-dark">
                         <img src="./img/paula.jpeg" class="card-img-top" alt="">
                         <div class="card-body">
-                            <h5 class="card-title">Dra. Paula Cavallaro</h5>
+                            <h5 class="card-title">Dra. Gabriella Leite Souza</h5>
                             <p class="card-text">Especialista em nutrologia</p>
                         </div>
                     </a>
@@ -83,7 +72,7 @@ $_SESSION["page"] = "equipe";
 
                 <div class="col-md-4">
                     <a href="profissional.php?nome=Amara" class="card text-decoration-none text-dark">
-                        <img src="./img/luna.jpeg" class="card-img-top" alt="">
+                        <img src="./img/amara2.jpg" class="card-img-top" alt="">
                         <div class="card-body">
                             <h5 class="card-title">Dra. Amara Oliveira</h5>
                             <p class="card-text">Especialista em endodontia<br>(canal)</p>
@@ -93,7 +82,7 @@ $_SESSION["page"] = "equipe";
 
                 <div class="col-md-4">
                     <a href="profissional.php?nome=Ellen" class="card text-decoration-none text-dark">
-                        <img src="./img/luana.jpeg" class="card-img-top" alt="">
+                        <img src="./img/ellen2.jpg" class="card-img-top" alt="">
                         <div class="card-body">
                             <h5 class="card-title">Ellen Santana</h5>
                             <p class="card-text">Especialista em<br>harmonização facial</p>
@@ -104,7 +93,7 @@ $_SESSION["page"] = "equipe";
                 <!-- Card do Profissional 3 -->
                 <div class="col-md-4">
                     <a href="profissional.php?nome=Renatha" class="card text-decoration-none text-dark">
-                        <img src="./img/renata.png" class="card-img-top" alt="Dra. Renata Andrade">
+                        <img src="./img/renatha.jpg" class="card-img-top" alt="Dra. Renata Andrade">
                         <div class="card-body">
                             <h5 class="card-title">Dra. Renatha Andrade</h5>
                             <p class="card-text">Especialista em clareamento<br>dental e limpeza</p>

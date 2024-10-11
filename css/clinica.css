@@ -90,6 +90,14 @@ section p {
     max-width: 700px;
 }
 
+#img-normal {
+    display: block;
+}
+
+#img-responsivo {
+    display: none;
+}
+
 .img-card {
     flex: 1;
     margin: 10px;
@@ -161,7 +169,9 @@ section p {
         margin: 0 40px;
     }
 
-    section {padding-top: 100px;}
+    section {
+        padding-top: 100px;
+    }
 
     .mosaico img {
         padding: 0;
@@ -208,13 +218,37 @@ section p {
         transition: transform 2.5s ease;
         /* Adiciona uma transição suave na transformação */
     }
-    
+
     .titulo-clinica.fade-in::after {
         transform: scaleX(1);
         /* Aumenta a largura para o tamanho completo do traço */
     }
 
-    .d-flex {width: fit-content; margin: auto; margin-top: 70px;}
+    .d-flex {
+        width: fit-content;
+        margin: auto;
+        margin-top: 70px;
+    }
+}
+
+@media (max-width: 600px) {
+    .titulo-clinica {
+        position: relative;
+        display: inline-block;
+        font-size: 38px;
+    }
+
+    #ambientes p {
+        font-size: 14px;
+    }
+
+    #img-normal {
+        display: none;
+    }
+
+    #img-responsivo {
+        display: block;
+    }
 }
 
 @media (max-width: 500px) {
@@ -223,5 +257,8 @@ section p {
         display: inline-block;
         font-size: 38px;
     }
-    #ambientes p {font-size: 14px;}
+
+    #ambientes p {
+        font-size: 14px;
+    }
 }

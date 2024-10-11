@@ -1,15 +1,16 @@
 let slideIndex = 1;
 let slideInterval;
+let startX; // Para armazenar a posição inicial do toque
+let threshold = 50; // Distância mínima para considerar o movimento como um swipe
 
 function initializeSlider() {
     showSlides(slideIndex);
     startSlideShow();
+    addSwipeListeners(); // Adicionar ouvintes de swipe
 }
 
 function startSlideShow() {
-    // Clear existing interval, if any
     clearInterval(slideInterval);
-    // Start a new interval to change slides every 8 seconds
     slideInterval = setInterval(function() {
         plusSlides(1);
     }, 8000);
@@ -17,19 +18,19 @@ function startSlideShow() {
 
 function plusSlides(n) {
     showSlides(slideIndex += n);
-    startSlideShow(); // Restart interval when user changes slide
+    startSlideShow();
 }
 
 function currentSlide(n) {
     showSlides(slideIndex = n);
-    startSlideShow(); // Restart interval when user selects a specific slide
+    startSlideShow();
 }
 
 function showSlides(n) {
     let slides = document.getElementsByClassName("slide");
     let dots = document.getElementsByClassName("dot");
-    let winiciusHero = document.getElementById("winicius-hero"); // Access the specific element
-    let heroParentSlide = winiciusHero.closest('.slide'); // Get the parent slide of winicius-hero
+    let winiciusHero = document.getElementById("winicius-hero");
+    let heroParentSlide = winiciusHero.closest('.slide');
 
     if (n > slides.length) { slideIndex = 1; }
     if (n < 1) { slideIndex = slides.length; }
@@ -45,13 +46,41 @@ function showSlides(n) {
     }
     dots[slideIndex - 1].className += " active";
 
-    // Check if the parent slide of winicius-hero is the viewed one
     if (heroParentSlide === slides[slideIndex - 1]) {
         winiciusHero.classList.remove('scale-loop');
-        void winiciusHero.offsetWidth; // Force reflow
+        void winiciusHero.offsetWidth; // Forçar reflow
         winiciusHero.classList.add('scale-loop');
     }
 }
 
-// Initialize the slider when the page loads
+function addSwipeListeners() {
+    let sliderContainer = document.querySelector('.slider'); // Certifique-se de ter a classe correta no container dos slides
+
+    sliderContainer.addEventListener('touchstart', function(e) {
+        startX = e.touches[0].clientX;
+    });
+
+    sliderContainer.addEventListener('touchend', function(e) {
+        let endX = e.changedTouches[0].clientX;
+        handleSwipe(startX, endX);
+    });
+}
+
+function handleSwipe(start, end) {
+    let diff = start - end;
+
+    if (Math.abs(diff) > threshold) {
+        if (diff > 0) {
+            // Swipe para a esquerda
+            plusSlides(1);
+            console.log('esquerda')
+        } else {
+            // Swipe para a direita
+            plusSlides(-1);
+            console.log('direita')
+        }
+    }
+}
+
+// Inicializar o slider quando a página carregar
 initializeSlider();
